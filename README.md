@@ -11,6 +11,11 @@ Planungs-Repo. Die Entscheidungen stehen in [SPEC.md](SPEC.md), die Belege in
 | [docs/quellen.md](docs/quellen.md) | Verwendete Quellen mit Datum |
 | [site/index.html](site/index.html) | Mobile Übersichtsseite (als Artifact veröffentlicht), mit Checkliste |
 | [.claude/skills/grill-me/SKILL.md](.claude/skills/grill-me/SKILL.md) | Interview-Skill, mit dem die Spec entstanden ist |
+| [docs/10-floodwaive-vereinbarung.md](docs/10-floodwaive-vereinbarung.md) | Vorlage für die Vereinbarung zum mobilen Arbeiten aus USA/Kanada plus HR-Schritte |
+| [docs/11-fahrzeugkauf-checkliste.md](docs/11-fahrzeugkauf-checkliste.md) | Zuladung, Besichtigung Truck und Kabine, Papiere, South Dakota, Verkauf |
+| [docs/12-packliste.md](docs/12-packliste.md) | Was aus Deutschland mit, was in den USA kaufen, Stromsetup |
+| [docs/13-angelspots.md](docs/13-angelspots.md) | Spots vom Ufer mit Koordinaten, Saison, Technik, Schlafplätze |
+| [docs/14-arbeitsplan.md](docs/14-arbeitsplan.md) | Zeitzonen je Phase, Wochenvorlage, Strom- und Netzbedarf |
 
 ## Kurzfassung der Spec
 
@@ -40,5 +45,4 @@ Planungs-Repo. Die Entscheidungen stehen in [SPEC.md](SPEC.md), die Belege in
 
 1. Spec lesen, Änderungen anmerken.
 2. Die vier Punkte in SPEC.md Abschnitt 14 klären (FloodWaive, Meldeadresse, Liquidität, Ok).
-3. Danach Detail-Dokumente: Fahrzeugkauf-Checkliste, Packliste, Angel-Spots, Arbeitsplan,
-   Vorlage FloodWaive-Vereinbarung.
+3. Detail-Dokumente 10 bis 14 durcharbeiten, zuerst die FloodWaive-Vereinbarung.

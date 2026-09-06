@@ -256,10 +256,12 @@ brauchst. Kauf in Alaska scheidet wegen März-Start und Frühjahrs-Verkäufermar
 - **Basis:** 2005–2013 Toyota Tundra oder Tacoma 4x4 (Benziner, robust, in Alaska begehrt,
   hoher Werterhalt), alternativ Ford F-250/F-350 mit Benzin-V8 (5.4 oder 6.2). Diesel 6.0
   PowerStroke (2003–2007) meiden. Preis 8.000–12.000 $ bei 150.000–250.000 km.
-- **Aufbau:** Gebrauchte Aufsetzkabine ("slide-in truck camper"), hartwandig oder Pop-up.
-  Lance, Northern Lite, Arctic Fox, Palomino, Four Wheel Camper. Preis 3.000–8.000 $.
-  Pop-ups (Four Wheel Camper) halten den Wert am besten, sind leicht, aber weniger isoliert.
-  Für April im Yukon und September in Alaska reicht das mit Propanheizung.
+- **Aufbau:** Gebrauchte Aufsetzkabine ("slide-in truck camper"). Auf Tacoma oder Tundra
+  passt wegen der Zuladung (1.100–1.900 lb) nur ein Pop-up: Four Wheel Camper, Palomino
+  Backpack, ca. 900–1.200 lb. Hartschalen (Lance, Arctic Fox, Northern Lite, 1.500–3.000 lb)
+  brauchen einen 3/4-Tonner (F-250, Ram 2500). Preis 3.000–8.000 $. Pop-ups halten den Wert
+  am besten und reichen mit Propanheizung für April im Yukon und September in Alaska.
+  Zuladung steht im Fahrertürholm, Details in docs/11.
 - **Warum diese Kombi:** Hochbeinig für Schotter (Denali Highway, Cassiar, Kenai-Nebenstraßen),
   4x4 für Uferzugänge, harte Kabine ist bärensicher genug, getrennter Verkauf von Truck und
   Kabine im Herbst verdoppelt die Käuferzahl.
@@ -545,6 +547,6 @@ Getriebe 3.000 $.
 3. Zusage einer Meldeadresse in Deutschland.
 4. Bestätigung, dass 15.000–18.000 $ im März liquide sind.
 
-Danach (idealerweise in einer frischen Session): Detail-Dokumente für Fahrzeugkauf-Checkliste,
-Packliste, Angel-Spots mit Koordinaten, Arbeitsplan Zeitzonen und die Vorlage für die
-FloodWaive-Vereinbarung.
+Die Detail-Dokumente liegen in docs/10 bis docs/14: FloodWaive-Vereinbarung als Vorlage,
+Fahrzeugkauf-Checkliste (mit der Zuladungsregel: Toyota heißt Pop-up-Kabine, Hartschale
+braucht einen 3/4-Tonner), Packliste, Angelspots mit Koordinaten, Arbeitsplan mit Zeitzonen.
