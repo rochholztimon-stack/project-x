@@ -17,6 +17,7 @@ Planungs-Repo. Die Entscheidungen stehen in [SPEC.md](SPEC.md), die Belege in
 | [docs/13-angelspots.md](docs/13-angelspots.md) | Spots vom Ufer mit Koordinaten, Saison, Technik, Schlafplätze |
 | [docs/14-arbeitsplan.md](docs/14-arbeitsplan.md) | Zeitzonen je Phase, Wochenvorlage, Strom- und Netzbedarf |
 | [docs/15-sparplan-unter-10k.md](docs/15-sparplan-unter-10k.md) | Plan unter 10.000 €, legale Tricks, Grauzonen mit Risiko, No-gos |
+| [docs/16-angebote-suche.md](docs/16-angebote-suche.md) | Suchlinks mit Filtern für Truck, Pop-up, Kombi und Hütte, Preisbänder, Vorlagen |
 
 ## Kurzfassung der Spec
 
