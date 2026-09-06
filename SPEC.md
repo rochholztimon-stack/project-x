@@ -176,6 +176,41 @@ sie mit B-2 gar nicht ausgeben.
 **Fazit:** Deutsche Meldeadresse bei Familie plus US-Mailbox als Postadresse. Beides
 zusammen, nicht eins statt dem anderen.
 
+### 4.6 "Auswanderer, der vielleicht zurückkommt" und Steuern in den USA zahlen? Nein
+
+Deine Idee vom 6. September: dich als Auswanderer erklären, nach 6 Monaten eventuell
+zurückkommen, und die Steuern in den USA zahlen, weil das günstiger sein könnte.
+
+- **Kein Visum dafür.** Ein Auswanderer braucht ein Einwanderungsvisum oder ein
+  Arbeitsvisum. B-2 verlangt das Gegenteil, nämlich die Absicht, wieder auszureisen. Wer bei
+  CBP "I'm emigrating" sagt, wird abgewiesen. Es gibt kein US-Visum für "lebt in den USA und
+  arbeitet remote für einen deutschen Arbeitgeber". Die realen Wege (Green-Card-Lotterie mit
+  etwa 1 % Chance und 1–2 Jahren Vorlauf, E-2 mit sechsstelliger Investition, H-1B-Lotterie,
+  L-1 nur mit US-Tochter von FloodWaive) helfen für 2027 nicht.
+- **Zwei Behörden, zwei Geschichten.** Dem Meldeamt "ausgewandert", der Grenze "Besucher":
+  eine der beiden Aussagen ist falsch. Die US-Steuererklärung als Resident Alien mit B-2 ist
+  außerdem ein schriftlicher Beleg für unerlaubte Arbeit, der bei jedem späteren ESTA oder
+  Visum wieder auftaucht.
+- **Steuerlich nicht günstiger.** Grobe Rechnung für 36.000 € brutto im Jahr (Steuerklasse I):
+  Deutschland ca. 14 % Lohnsteuer plus ca. 20 % Sozialabgaben, netto rund 66 %. USA ohne
+  Bundesstaatssteuer (Alaska, South Dakota) ca. 7 % Federal plus 7,65 % FICA, netto rund 86 %,
+  aber ohne Krankenversicherung. Eine US-Einzelpolice kostet 450–600 $ im Monat, damit
+  landest du wieder bei 68–72 %, ohne Rente, ohne Arbeitslosenversicherung, ohne
+  Pflegeversicherung. Und FloodWaive müsste dich über eine US-Lohnabrechnung (Employer of
+  Record, 500–1.000 $ im Monat) anstellen, sonst geht es gar nicht.
+- **Deutsche Seite.** Wegzug ohne Wohnsitz beendet die unbeschränkte Steuerpflicht, aber auch
+  GKV, Ausstrahlung und die Auslandskrankenversicherung (Abschnitte 4.2, 4.5). Kommst du nach
+  6 Monaten zurück, wertet das Finanzamt den Wegzug oft als nie erfolgt, weil der Wohnsitz bei
+  der Familie faktisch bestand. Dann hast du beides gezahlt und darfst dich um die
+  Anrechnung streiten.
+- **Was legal Steuern spart:** in diesem Setup nichts Nennenswertes. Die deutsche Lohnsteuer
+  auf ein 25-Stunden-Gehalt ist klein, der große Block sind Sozialabgaben, und die kaufen
+  genau das, was du unterwegs brauchst (GKV zu Hause, Rente, Absicherung).
+
+**Fazit:** Bleib bei Besucher mit B-2, deutschem Wohnsitz, unter 175 US-Tagen. Wenn du
+wirklich auswandern willst, ist das eine eigene Entscheidung mit eigenem Zeitplan, nicht ein
+Kniff für die Alaska-Reise.
+
 ---
 
 ## 5. Compliance-Checkliste FloodWaive (du prüfst sie selbst als Personalleiter)
@@ -379,7 +414,7 @@ brauchst. Kauf in Alaska scheidet wegen März-Start und Frühjahrs-Verkäufermar
 ## 10. Nicht-Ziele
 
 - Kein Winter in Alaska, keine Verlängerung über die 175-US-Tage hinaus.
-- Kein Wohnsitz in Mexiko, keine Abmeldung ohne deutschen Wohnsitz, keine US-Adresse als Wohnsitz (Abschnitte 4.4 und 4.5). Die SD-Mailbox bleibt reine Postadresse.
+- Kein Wohnsitz in Mexiko, keine Abmeldung ohne deutschen Wohnsitz, keine US-Adresse als Wohnsitz, keine "Auswanderer"-Erklärung für US-Steuern (Abschnitte 4.4 bis 4.6). Die SD-Mailbox bleibt reine Postadresse.
 - Kein Wohnmobil aus Deutschland verschiffen, kein Mietfahrzeug.
 - Keine Jagd, keine Schusswaffe (für Nonimmigrants ohne Jagdlizenz verboten, Import per
   ATF-Formular 6NIA, Kanada-Transit zusätzlich problematisch). Bärenspray reicht.
