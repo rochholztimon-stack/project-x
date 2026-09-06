@@ -366,6 +366,61 @@ brauchst. Kauf in Alaska scheidet wegen März-Start und Frühjahrs-Verkäufermar
 - Größter Hebel nach unten: billigerer Truck (dann höheres Pannenrisiko). Größter Hebel nach
   oben: Verkauf schlecht getimt.
 
+
+### 8.1 Wofür das Geld ist: Pflicht, Verbrauch, Einmalkauf, Risiko (Sparplan, 14.650 €)
+
+| Block | Posten | € | Warum so viel |
+|---|---|---|---|
+| **Pflicht, egal wie sparsam** | Visum 450, Auslands-KV 550, Flüge 1.000, Zulassung/Mailbox/Permit/Inspektion 800, Kfz-Versicherung 550, Angellizenz 100 | **3.450** | Von Behörden, Airlines und Versicherern vorgegeben. Einzige Hebel: Flüge früh buchen (−200), Kfz-Versicherung Quote vergleichen |
+| **Verbrauch unterwegs** | Sprit 2.900, Essen 1.900, Camping/Dump/Dusche 300, Propan 150, Internet 700 | **5.950** | 210 Tage, das sind rund 28 €/Tag alles inklusive. Sprit: 12.000 km × 20 l/100 km × 1,20 €/l. Essen: 10 $/Tag bei Alaska-Preisen |
+| **Einmalkäufe** | Rute/Köder 300, Ausrüstung 400, Solar/Batterie 500 | **1.200** | Solar bleibt im Fahrzeug und kommt beim Verkauf großteils zurück, Rute und Ausrüstung behältst du |
+| **Deutschland** | Einlagerung 350 | **350** | 0 €, wenn die Sachen bei Familie stehen |
+| **Risiko und Reserve** | Reparaturreserve 1.000, Wertverlust 1.400, allgemeine Reserve 1.300 | **3.700** | Kein geplanter Kauf. Wird nur ausgegeben, wenn etwas kaputtgeht oder der Verkauf schlecht läuft. Bleibt im Idealfall auf dem Konto |
+
+Sicher weg sind also rund **10.950 €** über 7 Monate, das sind etwa 1.560 € pro Monat inklusive
+Anreise, Visum, Versicherungen und Sprit. Die restlichen 3.700 € sind ein Puffer, den du
+vorhalten musst, aber im guten Fall behältst.
+
+Deine Zahl "2.000 € ohne Sprit" passt übrigens auf einen Teil davon: Essen bei 5 $/Tag,
+Camping, Propan, Lizenz und Köder ergeben 1.800–3.000 € für 6 Monate. Der Rest ist
+Hinkommen (Flüge, Visum), Dortseinsdürfen (Versicherung), Bewegen (Sprit) und ein Fahrzeug
+Besitzen (Zulassung, Versicherung, Verschleiß).
+
+### 8.2 Wann das Geld fließt (Sparplan, gerundet)
+
+| Wann | Was geht raus | ≈ € |
+|---|---|---|
+| Nov 2026 | Visumgebühr 185 $ beim Antrag, 250 $ bei Erteilung, Fahrt zum Konsulat | 450 |
+| Dez 2026–Jan 2027 | Auslands-KV 550, SD-Mailbox 200, Internationaler Führerschein 15, Hinflug 500 | 1.250 |
+| Feb 2027 | Einlagerung 350, leichte Ausrüstung aus Deutschland 150 | 500 |
+| März 2027, Portland | Fahrzeug 10.000–15.000 $ (geparkt, nicht verbraucht) · Excise Tax 4 %, Kennzeichen, Permit, Inspektion, VIN 600 · Versicherung 80 · Solar/Batterie 500 · Starlink Mini 300 · Werkzeug, Reserverad 250 · Sprit 250 · Essen 200 | 2.200 + Fahrzeug |
+| April, British Columbia | Sprit 500 (lange Etappen, CA$ 2/l), Essen 280, Versicherung 80, Internet 80, Propan 30, Camping 40 | 1.000 |
+| Mai, Yukon → Alaska | Sprit 450, Essen 280, Versicherung 80, Internet 80, Lizenz 90, Rute/Köder 250, Bärenspray 45, Propan 25, Camping 40 | 1.350 |
+| Juni, Kenai | Sprit 300, Essen 280, Versicherung 80, Internet 80, Propan 20, Camping/Dusche 50 | 800 |
+| Juli, Kenai | wie Juni | 800 |
+| August, Valdez/Interior | Sprit 450, Rest wie Juni | 950 |
+| September, Kenai/Anchorage | Sprit 300, Essen 280, Versicherung 80, Internet 80, Camping 50, Rückflug 500 | 1.300 |
+| Oktober | Verkauf: 10.000–14.000 $ kommen zurück. Rückreise Kleinkram | 100 |
+| jederzeit möglich | Reparatur bis 1.000, Wertverlust bis 1.400, Reserve 1.300 | 3.700 |
+
+Planbare Ausgaben ≈ 10.700 €, Reserve 3.700 €, zusammen ≈ 14.400 € (Rundungsdifferenz zur
+Postenliste). Unterwegs kostet das Leben also 800–1.350 € pro Monat inklusive Sprit und
+Versicherung, ohne Sprit 400–600 €.
+
+### 8.3 Was den Sparplan noch drückt
+
+| Hebel | Ersparnis | Preis dafür |
+|---|---|---|
+| Kenai-basiert bleiben, Interior und Valdez streichen | −700 € Sprit | weniger Alaska gesehen |
+| Essen 5 $/Tag statt 10 $ | −950 € | Nudeln, Dosen, Lachs |
+| Sachen bei Familie statt Einlagerung | −350 € | Platz bei Familie |
+| Flüge früh, Starlink Mini gebraucht, Roam 50 GB | −400 € | Planung |
+| **Sparplan minimal** | **≈ 12.200 €** | davon 3.700 € Reserve, die im guten Fall bleibt |
+
+Darunter geht es nur, indem du Reserve oder Auslands-KV streichst. Beides rate ich nicht:
+ein Krankenhausbesuch in den USA kostet 2.000–5.000 $, ein Hubschrauber 30.000 $, ein
+Getriebe 3.000 $.
+
 ---
 
 ## 9. Features / Bausteine (nummeriert, in Reihenfolge des kritischen Pfads)
