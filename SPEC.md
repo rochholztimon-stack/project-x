@@ -423,6 +423,15 @@ Darunter geht es nur, indem du Reserve oder Auslands-KV streichst. Beides rate i
 ein Krankenhausbesuch in den USA kostet 2.000–5.000 $, ein Hubschrauber 30.000 $, ein
 Getriebe 3.000 $.
 
+### 8.4 Ziel unter 10.000 €
+
+Auf Wunsch vom 6. September: ein Plan unter 10.000 € ohne Fahrzeugkapital. Ergebnis 9.500 €
+(davon 2.100 € Reserve), Variante "Alaska direkt ab Ende April" 8.300 €. Rechnung, legale
+Tricks, Grauzonen mit Risiko und No-gos in docs/15-sparplan-unter-10k.md. Die drei
+wichtigsten Hebel: Toyota mit Pop-up statt Hartschale (weniger Sprit, kaum Wertverlust),
+nur Haftpflicht versichern, und alles Teure gebraucht kaufen und am Ende in Anchorage
+verkaufen.
+
 ---
 
 ## 9. Features / Bausteine (nummeriert, in Reihenfolge des kritischen Pfads)
