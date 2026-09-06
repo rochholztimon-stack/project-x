@@ -1,0 +1,668 @@
+<title>Alaska 2027</title>
+<meta name="description" content="Solo mit Pickup-Camper und Angelrute von Portland durch den Yukon nach Alaska: Plan, Grenzen, Route, Geld, Checkliste.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Atkinson+Hyperlegible:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#EDF1EF; --surface:#FFFFFF; --surface-2:#E2E8E5; --ink:#15201B; --muted:#5B6964; --line:#D0D9D4;
+  --accent:#0B85A8; --accent-ink:#FFFFFF; --accent-soft:#DDEEF4;
+  --limit:#B4302A; --limit-soft:#F6E3E1; --warn:#B8701A; --warn-soft:#F7EBDA; --ok:#3B7A48; --ok-soft:#E1EFE3;
+  --s1:#0B85A8; --s2:#B8701A;
+  --seq1:#D5E9EF; --seq2:#7FBFD2; --seq3:#0B85A8; --seq3-ink:#FFFFFF;
+  --shadow:0 1px 2px rgba(21,32,27,.06),0 6px 18px rgba(21,32,27,.07);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --bg:#0E1412; --surface:#171F1B; --surface-2:#1F2A25; --ink:#E7ECE9; --muted:#9BA8A2; --line:#2B3731;
+    --accent:#2FA6B8; --accent-ink:#0E1412; --accent-soft:#173238;
+    --limit:#E5716A; --limit-soft:#3A1F1D; --warn:#D9A65A; --warn-soft:#3A2C16; --ok:#72B47F; --ok-soft:#1C3324;
+    --s1:#2FA6B8; --s2:#B37B22;
+    --seq1:#1D3A42; --seq2:#276E7C; --seq3:#2FA6B8; --seq3-ink:#0E1412;
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#0E1412; --surface:#171F1B; --surface-2:#1F2A25; --ink:#E7ECE9; --muted:#9BA8A2; --line:#2B3731;
+  --accent:#2FA6B8; --accent-ink:#0E1412; --accent-soft:#173238;
+  --limit:#E5716A; --limit-soft:#3A1F1D; --warn:#D9A65A; --warn-soft:#3A2C16; --ok:#72B47F; --ok-soft:#1C3324;
+  --s1:#2FA6B8; --s2:#B37B22;
+  --seq1:#1D3A42; --seq2:#276E7C; --seq3:#2FA6B8; --seq3-ink:#0E1412;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 18px rgba(0,0,0,.25);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Atkinson Hyperlegible',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;font-size:16px;line-height:1.5}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.app{max-width:640px;margin:0 auto;padding:18px 16px calc(88px + env(safe-area-inset-bottom))}
+h1,h2,h3,.display{font-family:'Barlow Condensed','Arial Narrow','Helvetica Neue',sans-serif;font-weight:700;letter-spacing:.01em;text-wrap:balance;margin:0;line-height:1.05}
+.mono,.num{font-family:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;font-variant-numeric:tabular-nums}
+p{margin:0 0 10px}
+ul{margin:0;padding-left:18px}
+li{margin:0 0 6px}
+strong{font-weight:700}
+.eyebrow{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.masthead{padding:4px 0 14px;border-bottom:2px solid var(--ink)}
+.masthead h1{font-size:56px;line-height:.95;margin:4px 0 6px}
+.masthead .route{font-size:15px;color:var(--muted)}
+.masthead .route b{color:var(--ink)}
+.stamp{margin-top:8px;font-size:12px;color:var(--muted)}
+.sec{margin-top:30px}
+.sec>h2{font-size:28px;text-transform:uppercase;letter-spacing:.03em;padding-bottom:6px;margin-bottom:12px;border-bottom:1px solid var(--line)}
+.sec>h2 small{font-family:'Atkinson Hyperlegible',sans-serif;font-weight:400;font-size:13px;letter-spacing:0;text-transform:none;color:var(--muted);margin-left:8px}
+.lead{font-size:17px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.stat{background:var(--surface);border-radius:10px;padding:12px 12px 10px;box-shadow:var(--shadow)}
+.stat .l{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.stat .v{font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;font-size:22px;font-weight:500;margin:2px 0 0;line-height:1.2}
+.stat .h{font-size:12px;color:var(--muted);margin-top:2px}
+.stat.limit .v{color:var(--limit)}
+.brief{list-style:none;padding:0;margin:0}
+.brief li{padding:11px 0;border-top:1px solid var(--line);margin:0}
+.brief li:first-child{border-top:0}
+.brief b{display:block;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:20px;line-height:1.1;margin-bottom:2px}
+.cards{display:grid;gap:12px}
+.card{background:var(--surface);border-radius:10px;padding:14px 16px;box-shadow:var(--shadow)}
+.card h3{font-size:22px;margin-bottom:6px}
+.card ul{margin-top:6px}
+.limit{border-left:5px solid var(--limit);border-radius:0 10px 10px 0}
+.limit h3{color:var(--limit)}
+.limit .k{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--limit)}
+details.more{margin-top:8px;border-top:1px dashed var(--line);padding-top:8px}
+details.more summary{cursor:pointer;color:var(--accent);font-weight:700;list-style:none;display:flex;align-items:center;gap:6px}
+details.more summary::-webkit-details-marker{display:none}
+details.more summary::before{content:"+";font-family:'IBM Plex Mono',monospace;width:18px;height:18px;border:1.5px solid var(--accent);border-radius:4px;display:inline-grid;place-items:center;font-size:14px;line-height:1}
+details.more[open] summary::before{content:"–"}
+details.more>*:not(summary){margin-top:8px}
+.chip{display:inline-block;padding:2px 8px;border-radius:999px;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:12px;letter-spacing:.08em;text-transform:uppercase;vertical-align:middle;white-space:nowrap}
+.chip.high{background:var(--limit-soft);color:var(--limit)}
+.chip.mid{background:var(--warn-soft);color:var(--warn)}
+.chip.low{background:var(--ok-soft);color:var(--ok)}
+.chip.info{background:var(--accent-soft);color:var(--accent)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:15px}
+.kv dt{color:var(--muted)}
+.kv dd{margin:0}
+.tz{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;background:var(--surface-2);border-radius:10px;padding:12px}
+.tz .z{text-align:center}
+.tz .z .t{font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:500}
+.tz .z .n{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;font-family:'Barlow Condensed',sans-serif;font-weight:600}
+.tz .arrow{font-family:'IBM Plex Mono',monospace;color:var(--muted)}
+.verdict{background:var(--surface);border-radius:10px;padding:14px 16px;box-shadow:var(--shadow);border-top:4px solid var(--warn)}
+.verdict h3{font-size:22px;margin-bottom:6px}
+.risk{list-style:none;padding:0}
+.risk li{display:grid;grid-template-columns:1fr auto;gap:8px;align-items:start;padding:9px 0;border-top:1px solid var(--line)}
+.risk li:first-child{border-top:0}
+.risk .m{font-size:13px;color:var(--muted);grid-column:1/-1;margin-top:-4px}
+/* timeline */
+.tl{position:relative;margin:6px 0 0 6px;padding-left:22px;border-left:2px solid var(--line)}
+.ph{position:relative;padding:0 0 22px}
+.ph::before{content:"";position:absolute;left:-30px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 3px var(--bg)}
+.ph.us::before{background:var(--limit)}
+.ph .when{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--muted)}
+.ph h3{font-size:23px;margin:2px 0 4px}
+.ph .where{font-weight:700}
+.ph p{font-size:15px;margin:4px 0 8px}
+.meter{position:relative;height:10px;background:var(--surface-2);border-radius:5px;margin-top:6px}
+.meter>i{position:absolute;left:0;top:0;bottom:0;background:var(--accent);border-radius:5px}
+.meter>b{position:absolute;top:-4px;bottom:-4px;width:2px;background:var(--limit)}
+.meter>b.soft{background:var(--warn)}
+.mlab{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);margin-top:4px}
+.mlab .r{color:var(--limit)}
+/* fish calendar */
+.tbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -16px;padding:0 16px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{padding:8px 6px;border-top:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border-top:0}
+td.num,th.num{text-align:right;font-family:'IBM Plex Mono',monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr.total td{border-top:2px solid var(--ink);font-weight:700}
+.cal td{padding:0;border-top:0}
+.cal th{padding:6px 4px;text-align:center}
+.cal th:first-child{text-align:left}
+.cal td:first-child{padding:6px 8px 6px 0;font-weight:700;white-space:nowrap}
+.cal .c{display:block;margin:2px;height:38px;border-radius:5px;background:var(--surface-2);font-family:'IBM Plex Mono',monospace;font-size:11px;display:grid;place-items:center;color:var(--muted)}
+.cal .c1{background:var(--seq1);color:var(--ink)}
+.cal .c2{background:var(--seq2);color:var(--ink)}
+.cal .c3{background:var(--seq3);color:var(--seq3-ink);font-weight:500}
+.cal .cx{background:repeating-linear-gradient(135deg,var(--surface-2) 0 4px,var(--limit-soft) 4px 8px);color:var(--limit)}
+.legend{display:flex;flex-wrap:wrap;gap:10px 16px;font-size:13px;color:var(--muted);margin:8px 0 4px}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:5px}
+/* budget chart */
+.chart{background:var(--surface);border-radius:10px;padding:14px 14px 10px;box-shadow:var(--shadow)}
+.chart .row{display:grid;grid-template-columns:104px 1fr;gap:8px;align-items:center;padding:7px 0;border-top:1px solid var(--line)}
+.chart .row:first-of-type{border-top:0}
+.chart .lab{font-size:14px;line-height:1.2}
+.chart .bars{display:grid;gap:3px;padding-right:58px}
+.chart .bar{position:relative;height:12px;border-radius:0 4px 4px 0}
+.chart .bar.s1{background:var(--s1)}
+.chart .bar.s2{background:var(--s2)}
+.chart .bar .v{position:absolute;left:calc(100% + 6px);top:-3px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted);white-space:nowrap}
+.chart .bar .tip{position:absolute;left:0;bottom:calc(100% + 6px);background:var(--ink);color:var(--bg);font-size:12px;padding:4px 8px;border-radius:6px;white-space:nowrap;display:none;z-index:2}
+.chart .bar:hover .tip,.chart .bar:focus .tip{display:block}
+.chart .axis{display:flex;justify-content:space-between;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);margin:6px 0 0 112px;padding-right:58px}
+.totals{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}
+.totals .stat .v{font-size:24px}
+.totals .s1 .v{color:var(--s1)}
+.totals .s2 .v{color:var(--s2)}
+/* checklist */
+.prog{height:8px;background:var(--surface-2);border-radius:4px;overflow:hidden;margin-top:6px}
+.prog>i{display:block;height:100%;background:var(--ok);width:0;transition:width .3s}
+@media (prefers-reduced-motion:reduce){.prog>i{transition:none}}
+.save{font-size:13px;color:var(--muted);margin-top:6px}
+.grp{margin-top:18px}
+.grp h3{font-size:20px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);margin-bottom:4px}
+.check{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+.check input{flex:0 0 auto;width:22px;height:22px;margin:1px 0 0;accent-color:var(--accent)}
+.check label{flex:1;cursor:pointer}
+.check.done label{color:var(--muted);text-decoration:line-through}
+.check .d{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+/* tabs */
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--surface);border-top:1px solid var(--line);padding:0 0 env(safe-area-inset-bottom)}
+.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
+.tabs button{appearance:none;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;padding:11px 2px 12px;cursor:pointer}
+.tabs button[aria-selected="true"]{color:var(--accent);border-top-color:var(--accent)}
+.note{font-size:13px;color:var(--muted)}
+.hl{background:var(--accent-soft);border-radius:6px;padding:1px 5px}
+@media (min-width:520px){.masthead h1{font-size:68px}}
+</style>
+
+<script id="plan-state" type="application/json">{"done":{}}</script>
+
+<div class="app">
+  <header class="masthead">
+    <div class="eyebrow">Solo · Pickup-Camper · Lachs vom Ufer · 25 h remote</div>
+    <h1>Alaska 2027</h1>
+    <div class="route"><b>Portland</b> → British Columbia → Yukon → <b>Kenai</b> → Valdez → Anchorage</div>
+    <div class="stamp">Spec vom 6. September 2026. Preise und Regeln sind Momentaufnahmen, vor jeder Buchung prüfen.</div>
+  </header>
+
+  <main>
+  <!-- ===================== PLAN ===================== -->
+  <section class="view" id="v-plan" role="tabpanel" aria-label="Plan">
+    <div class="stats">
+      <div class="stat"><div class="l">Abflug</div><div class="v">10. Mär 2027</div><div class="h">FRA → Portland, one-way</div></div>
+      <div class="stat limit"><div class="l">US-Tage 2027</div><div class="v">162 / 175</div><div class="h">Harte Grenze 183, Planziel 175</div></div>
+      <div class="stat"><div class="l">Fahrzeugkapital</div><div class="v">12–18 k$</div><div class="h">80–90 % kommen zurück</div></div>
+      <div class="stat"><div class="l">Reisekosten</div><div class="v">14,7–24,5 k€</div><div class="h">Sparplan bis realistisch</div></div>
+    </div>
+
+    <div class="sec">
+      <h2>Kurzfassung</h2>
+      <ul class="brief">
+        <li><b>ESTA reicht nicht.</b> 90 Tage, Kanada setzt die Uhr nicht zurück. Du brauchst ein B-2-Visum, bis 180 Tage pro Einreise. Termin im November 2026 buchen.</li>
+        <li><b>Unter 183 US-Tagen bleiben.</b> Sonst US-Steuerpflicht, und dein deutsches Gehalt für US-Arbeitstage wird in den USA besteuert. Planziel 175, die Route hält 162.</li>
+        <li><b>Fahrzeug: Toyota-Pickup 4x4 plus gebrauchte Aufsetzkabine.</b> Kauf im März in Oregon, Zulassung über South Dakota, Versicherung Progressive, Verkauf Ende September in Anchorage.</li>
+        <li><b>Route:</b> Portland (März) → BC und Yukon (April bis Mitte Mai) → Alaska (Mitte Mai bis Ende September). Sockeye Juni/Juli, Silberlachs August/September.</li>
+        <li><b>Budget:</b> Sparplan knapp 15.000 €, realistisch 18.000–22.000 €. Die Differenz ist fast nur Fahrzeugrisiko.</li>
+        <li><b>Arbeit:</b> 25 h remote, Kernzeit 5–10 Uhr Alaska, Starlink Mini am Fahrzeug. Compliance-Liste für FloodWaive unten.</li>
+        <li><b>GKV bleibt, Meldeadresse bleibt.</b> Pflichtversichert bei laufendem Job, zahlt in den USA aber nichts. Langzeit-Auslandsversicherung dazu, Adresse bei Familie, nicht abmelden, kein Wohnsitz in Mexiko.</li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <h2>Drei harte Grenzen</h2>
+      <div class="cards">
+        <div class="card limit">
+          <div class="k">Grenze 1</div>
+          <h3>B-2-Visum statt ESTA</h3>
+          <ul>
+            <li>DS-160 online (fragt Social-Media-Namen der letzten 5 Jahre), Interview in Frankfurt, Berlin oder München. Wartezeit im Winter ca. 4 Wochen, ab April deutlich länger.</li>
+            <li>Kosten ca. 185 $ plus 250 $ Visa Integrity Fee (Umsetzung je Konsulat unterschiedlich, vorher prüfen).</li>
+            <li>Beim Interview zählen laufender Arbeitsvertrag, Kontoauszüge, Reiseplan, Rückkehrabsicht. Gekündigte Wohnung ist ein Minus, Meldeadresse bei Familie gleicht das aus.</li>
+          </ul>
+          <details class="more">
+            <summary>Remote-Arbeit und I-94</summary>
+            <p><strong>Grauzone Remote-Arbeit.</strong> B-2 erlaubt keine Arbeit in den USA. Remote für einen deutschen Arbeitgeber, bezahlt in Deutschland, ohne US-Kunden, wird meist toleriert, ist aber nicht sauber geregelt. Wenn gefragt: „Ich bleibe in Deutschland angestellt, arbeite reduziert und halte remote Kontakt, ich arbeite für kein US-Unternehmen.“ Nie „I work in the US“ sagen. Das Risiko trägst du.</p>
+            <p><strong>I-94 bei Wiedereinreise aus Kanada.</strong> Im März bekommst du ein I-94 mit Ablauf ca. 10. September. Im Mai an der Alaska-Grenze aktiv um ein neues bitten („I've been in Canada for seven weeks, could you please issue a new I-94“) und innerhalb von 24 Stunden auf i94.cbp.dhs.gov prüfen. Kommt keins, musst du bis zum alten Datum raus. Deshalb bleibt die Lower-48-Phase kurz.</p>
+          </details>
+        </div>
+        <div class="card limit">
+          <div class="k">Grenze 2</div>
+          <h3>Maximal 175 US-Tage in 2027</h3>
+          <ul>
+            <li><strong>Substantial Presence Test:</strong> ab 183 Tagen im Kalenderjahr giltst du als US-Steuerinländer. Kanada-Tage zählen nicht.</li>
+            <li><strong>DBA Art. 15:</strong> über 183 Tage in einem 12-Monats-Fenster wird dein Gehalt für US-Arbeitstage in den USA steuerpflichtig.</li>
+            <li>Tagesliste führen, Ein- und Ausreisetag zählen je als Tag.</li>
+          </ul>
+          <details class="more">
+            <summary>Wohnsitz, Sozialversicherung, GKV</summary>
+            <p><strong>Deutscher Wohnsitz behalten.</strong> Ohne Wohnung und mit 7 Monaten Abwesenheit droht der Verlust des gewöhnlichen Aufenthalts (§ 9 AO). Lösung: Zimmer bei Familie oder Freunden mit Schlüssel, dorthin ummelden, nicht abmelden. Das sichert Steuerpflicht in Deutschland, GKV, Bank, Versicherungen und die Bindung fürs Visum. Mit Steuerberater bestätigen.</p>
+            <p><strong>Sozialversicherung läuft weiter</strong>, wenn die Auslandstätigkeit befristet ist und das Arbeitsverhältnis in Deutschland bleibt (Ausstrahlung, § 4 SGB IV). Schriftlich bei der Krankenkasse anfragen. Rente: Bescheinigung D/USA 101 über die DRV, dann keine US-Sozialabgaben.</p>
+            <p><strong>GKV kündigen geht nicht.</strong> Als Angestellter bist du pflichtversichert, die Beiträge laufen über die Gehaltsabrechnung, kosten also nichts extra. Die GKV zahlt in den USA nichts, deshalb ist die Langzeit-Auslandskrankenversicherung Pflicht (2,50–3,50 € pro Tag, Rücktransport muss drin sein). Fast alle Policen setzen einen deutschen Wohnsitz voraus.</p>
+          </details>
+        </div>
+        <div class="card limit">
+          <div class="k">Grenze 3</div>
+          <h3>Geld: unter 15 k€ nur mit dem Sparplan</h3>
+          <ul>
+            <li>Erreichbar mit Wildcampen, Essen um 10 $/Tag, ohne Charter und ohne Dalton. Realistisch mit Puffer 18.000–22.000 €.</li>
+            <li>Zusätzlich 12.000–18.000 $ liquide im März für Fahrzeug plus Reserve. Davon kommen 80–90 % im Herbst zurück.</li>
+            <li>Zwei Kreditkarten verschiedener Anbieter, mindestens 5.000 € Limit, 1.000–2.000 $ Bargeld für den Privatkauf.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2>Fahrzeug</h2>
+      <div class="card">
+        <h3>Toyota Tundra oder Tacoma 4x4 + gebrauchte Aufsetzkabine</h3>
+        <dl class="kv">
+          <dt>Basis</dt><dd>2005–2013 Tundra/Tacoma, Benziner, 150.000–250.000 km, 8.000–12.000 $. Alternativ Ford F-250/350 mit Benzin-V8. Diesel 6.0 PowerStroke meiden.</dd>
+          <dt>Aufbau</dt><dd>Slide-in-Kabine, hart oder Pop-up: Lance, Northern Lite, Arctic Fox, Palomino, Four Wheel Camper. 3.000–8.000 $.</dd>
+          <dt>Muss rein</dt><dd>Propanheizung, Kühlschrank, 100 Ah LiFePO4 + 200 W Solar + Wechselrichter (600–1.000 $, läuft Starlink und Laptop), Wasser 60–100 l, Tisch, zweites Reserverad, Kompressor, Werkzeug.</dd>
+          <dt>Warum</dt><dd>Hochbeinig für Schotter, 4x4 für Uferzugänge, harte Kabine ist bärensicher genug, Truck und Kabine verkaufen sich getrennt schneller.</dd>
+        </dl>
+        <details class="more">
+          <summary>Kaufablauf in Oregon</summary>
+          <ol>
+            <li>Ab Januar Craigslist Portland/Seattle, Facebook Marketplace, RVTrader beobachten, Besichtigungen für 10.–20. März verabreden.</li>
+            <li>Oregon: keine Sales Tax, 21-Tage-Trip-Permit (ca. 35 $) für unregistrierte Fahrzeuge.</li>
+            <li>Vor dem Kauf: VIN-Check (25–45 $), Werkstatt-Inspektion (100–200 $), Title „clean“ auf den Verkäufer, Bill of Sale mit VIN, Preis, Datum, Odometer-Erklärung. Bar oder Cashier's Check.</li>
+            <li>Zulassung über South Dakota: Mailbox in Sioux Falls (Dakota Post, Americas Mailbox, Your Best Address, 150–300 $/Jahr) im Januar einrichten. Title, Bill of Sale, Antrag und 4 % Excise Tax per Post, Kennzeichen kommen an die Mailbox und werden nachgeschickt (General Delivery Tok oder Anchorage). 2–4 Wochen. Kein SD-Führerschein nötig.</li>
+            <li>Versicherung: Progressive oder National General nehmen deutschen Führerschein mit SD-Adresse, 80–150 $/Monat. Kabine mitversichern.</li>
+            <li>EU-Kartenführerschein plus Internationaler Führerschein (15 €). Alaska nennt 90 Tage für ausländische Lizenzen, das zielt auf Zuziehende. Beides mitführen.</li>
+          </ol>
+        </details>
+        <details class="more">
+          <summary>Warum nicht mieten, verschiffen oder in Alaska kaufen</summary>
+          <ul>
+            <li><strong>Mieten:</strong> 18.000–30.000 $ für 5 Monate. Sprengt das Budget.</li>
+            <li><strong>Aus Deutschland verschiffen:</strong> 7.000–10.000 € hin und zurück, du hast kein Fahrzeug, und hinterher eins, das du nicht brauchst. Lohnt nur bei vorhandenem Fahrzeug, das du danach jahrelang nutzt, oder bei über 8 Monaten Reise.</li>
+            <li><strong>In Alaska kaufen:</strong> März ist Winter, April/Mai ist Verkäufermarkt mit kleiner Auswahl, September ist Käufermarkt. Genau falsch herum.</li>
+            <li><strong>In Kanada kaufen:</strong> Versicherung als Ausländer praktisch nicht möglich.</li>
+          </ul>
+        </details>
+        <details class="more">
+          <summary>Verkauf im Herbst</summary>
+          <p><strong>Anchorage (Standard):</strong> ab 20. August inserieren, Übergabe 25.–30. September. Rechne mit 15–25 % unter Kaufpreis, dafür kein Rückweg.</p>
+          <p><strong>Seattle:</strong> Ende September durch den Yukon nach Süden (3.900 km, 600–800 $ Sprit), Verkauf im Oktober, 5–10 % besserer Preis, kostet aber 8–12 US-Tage. Nur bei Luft in der Tagesliste.</p>
+        </details>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2>Arbeit &amp; Compliance</h2>
+      <div class="tz" aria-label="Zeitzonen">
+        <div class="z"><div class="t">05–10</div><div class="n">Alaska, Kernzeit</div></div>
+        <div class="arrow">=</div>
+        <div class="z"><div class="t">15–20</div><div class="n">Deutschland</div></div>
+      </div>
+      <p class="note" style="margin-top:8px">10 Stunden Versatz im Sommer. Fünf Vormittage pro Woche decken 25 Stunden, Nachmittage und die langen Abende bleiben fürs Angeln und Fahren.</p>
+      <details class="more">
+        <summary>Checkliste für FloodWaive (prüfst du selbst)</summary>
+        <ol>
+          <li>Schriftliche Vereinbarung „Mobiles Arbeiten aus USA/Kanada“: Zeitraum, Stunden, Erreichbarkeit in deutscher Zeit, Geräte, Rückkehrdatum, Widerruf.</li>
+          <li>Krankenkasse schriftlich: Weitergeltung der Sozialversicherung bei befristeter Tätigkeit in den USA (Ausstrahlung).</li>
+          <li>DRV: Bescheinigung D/USA 101.</li>
+          <li>Steuer: Bestätigung Wohnsitz bei Familie, 183-Tage-Zählung als Auflage in die Vereinbarung.</li>
+          <li>Gesetzliche Unfallversicherung gilt bei Ausstrahlung, sonst private.</li>
+          <li>IT: Laptop verschlüsselt, VPN Pflicht (Starlink ist CGNAT), keine personenbezogenen Daten lokal, ausgeloggt über die Grenze.</li>
+          <li>Arbeitszeit dokumentieren, Nachtmeetings vermeiden.</li>
+        </ol>
+      </details>
+    </div>
+
+    <div class="sec">
+      <h2>Wohnsitz in Mexiko?</h2>
+      <div class="verdict">
+        <h3>Bringt für Alaska nichts und macht drei Dinge kaputt</h3>
+        <ul>
+          <li><strong>USA unverändert:</strong> Als Deutscher brauchst du weiter B-2 oder ESTA, 180 Tage pro Einreise und die 183-Tage-Regel bleiben. Die ESTA-Sonderregel für die Rückkehr ins Wohnsitzland hilft in Alaska nicht.</li>
+          <li><strong>FloodWaive:</strong> Dauerhafter Wohnsitz in Mexiko heißt Beschäftigungsort Mexiko. Sozialversicherung und GKV enden, der Arbeitgeber bekommt Lohnsteuer- und Betriebsstättenrisiko in Mexiko. Das trägt kaum einer.</li>
+          <li><strong>Steuer und Versicherung:</strong> keine unbeschränkte Steuerpflicht in Deutschland mehr, dafür mexikanische mit Welteinkommen. Deutsche Langzeit-Reiseversicherungen brauchen einen deutschen Wohnsitz, du bräuchtest eine Expat-Police (100–200 €/Monat).</li>
+          <li><strong>Aufwand:</strong> Residente Temporal mit Einkommensnachweis von etwa 4.000–4.500 $ netto pro Monat oder rund 70.000 $ Guthaben (je Konsulat verschieden), persönliche Abholung in Mexiko, jährliche Verlängerung. Ein Touristen-FMM ist kein Wohnsitz.</li>
+        </ul>
+        <p style="margin:6px 0 0"><strong>Fazit:</strong> nur, wenn du wirklich Jahre in Mexiko leben willst und FloodWaive mitzieht. Für 2027: Meldeadresse bei Familie. Dasselbe gilt für „einfach abmelden“.</p>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2>Risiken <small>mit Gegenmaßnahme</small></h2>
+      <ul class="risk">
+        <li><span>B-2 wird abgelehnt</span><span class="chip mid">mittel</span><span class="m">Arbeitsvertrag, Vereinbarung, Kontoauszüge, Meldeadresse, Rückkehrdatum vorlegen.</span></li>
+        <li><span>Kein neues I-94 im Mai</span><span class="chip mid">mittel</span><span class="m">Kurze Lower-48-Phase, aktiv bitten, Plan B: vor Ablauf in den Yukon und neu einreisen.</span></li>
+        <li><span>Panne auf Cassiar oder Yukon</span><span class="chip mid">mittel</span><span class="m">Inspektion vor Kauf, Toyota, Ersatzteile, zweites Reserverad, Abschleppmitgliedschaft (AAA, Good Sam).</span></li>
+        <li><span>Fahrzeug im September schwer verkäuflich</span><span class="chip mid">mittel</span><span class="m">Früh inserieren, getrennt anbieten, 10 % unter Markt, Händler-Ankauf als Notausgang.</span></li>
+        <li><span>Kennzeichen nicht vor Kanada da</span><span class="chip mid">mittel</span><span class="m">Trip Permit, Nachsendung nach Tok oder Anchorage, mit Papieren fahren.</span></li>
+        <li><span>Spritpreise wie 2026 (bis 5,20 $/gal)</span><span class="chip mid">mittel</span><span class="m">Budget „realistisch“ deckt 1,45 $/l, weniger Interior-Kilometer.</span></li>
+        <li><span>Nachtarbeit und Einsamkeit</span><span class="chip mid">mittel</span><span class="m">Asynchron vormittags, feste Ruhetage, alle 1–2 Wochen ein Campground mit Leuten.</span></li>
+        <li><span>Sockeye-Lauf schwach oder Sperre</span><span class="chip low">niedrig</span><span class="m">Kasilof, Kenai-Unterlauf, Silberlachs im August, Valdez als Ausweich.</span></li>
+        <li><span>183-Tage-Grenze gerissen</span><span class="chip low">niedrig</span><span class="m">Tagesliste, 13 Tage Puffer, Seattle-Verkauf nur bei Luft.</span></li>
+        <li><span>Versicherung lehnt deutschen Führerschein ab</span><span class="chip low">niedrig</span><span class="m">Quote im Februar testen, Alternativen National General, Thum.</span></li>
+        <li><span>Bärenkontakt</span><span class="chip low">niedrig</span><span class="m">Spray griffbereit, Essen und Fisch nur in der Kabine, Regeln im Tab Angeln.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== ROUTE ===================== -->
+  <section class="view" id="v-route" role="tabpanel" aria-label="Route" hidden>
+    <div class="sec" style="margin-top:14px">
+      <h2>Route <small>März bis Oktober 2027</small></h2>
+      <p class="lead">Rote Punkte sind US-Tage, blaue Kanada. Der Balken zählt die US-Tage gegen die harte Grenze von 183, der gelbe Strich ist das Planziel 175.</p>
+      <div class="tl">
+        <div class="ph us">
+          <div class="when">10.–28. März · 19 Tage</div>
+          <h3>Portland, Oregon-Küste</h3>
+          <div class="where">Kauf, Zulassung, Starlink, Probefahrten</div>
+          <p>Truck und Kabine kaufen, Trip Permit, Versicherung, South-Dakota-Antrag per Post, Solar und Batterie einbauen, Werkzeug, Arbeitsrhythmus 5–10 Uhr testen. I-94 online prüfen, Tagesliste starten.</p>
+          <div class="meter"><i style="width:10.4%"></i><b class="soft" style="left:95.6%"></b><b style="left:100%"></b></div>
+          <div class="mlab"><span>19 US-Tage</span><span class="r">183</span></div>
+        </div>
+        <div class="ph">
+          <div class="when">29. März – 15. Mai · 48 Tage Kanada</div>
+          <h3>British Columbia, Yukon</h3>
+          <div class="where">Kamloops · Prince George · Cassiar · Watson Lake · Whitehorse · Kluane</div>
+          <p>Nachts noch Frost, Seen werden Ende April eisfrei (Forelle bei Kamloops), Tankstellen 150–300 km auseinander, nie unter halbem Tank vorbeifahren. Kein eTA nötig an der Landgrenze, Bärenspray mit EPA-Etikett erlaubt.</p>
+          <div class="meter"><i style="width:10.4%"></i><b class="soft" style="left:95.6%"></b><b style="left:100%"></b></div>
+          <div class="mlab"><span>19 US-Tage</span><span class="r">183</span></div>
+        </div>
+        <div class="ph us">
+          <div class="when">16. Mai – 10. Juni</div>
+          <h3>Tok, Anchorage, Kenai</h3>
+          <div class="where">Neues I-94 · Lizenz · Costco · Homer Spit · Seward</div>
+          <p>An der Alcan-Grenze neues I-94 verlangen. In Anchorage Bärenspray, Rute, Köder, Propan. Homer Spit und Anchor Point für Heilbutt vom Ufer, erste Sockeye an Kenai und Kasilof.</p>
+          <div class="meter"><i style="width:24.6%"></i><b class="soft" style="left:95.6%"></b><b style="left:100%"></b></div>
+          <div class="mlab"><span>45 US-Tage</span><span class="r">183</span></div>
+        </div>
+        <div class="ph us">
+          <div class="when">11. Juni – 15. Juli</div>
+          <h3>Russian River, Kenai, Kasilof</h3>
+          <div class="where">Sockeye-Hauptsaison</div>
+          <p>Russian River öffnet am 11. Juni, Fly-only-Zone, Peak Ende Juni bis Mitte Juli. Limit meist 3 pro Tag, per Emergency Order oft auf 6 erhöht. Kings bleiben gesperrt.</p>
+          <div class="meter"><i style="width:43.7%"></i><b class="soft" style="left:95.6%"></b><b style="left:100%"></b></div>
+          <div class="mlab"><span>80 US-Tage</span><span class="r">183</span></div>
+        </div>
+        <div class="ph us">
+          <div class="when">16. Juli – 20. August</div>
+          <h3>Valdez, Whittier, Seward, Interior</h3>
+          <div class="where">Pinks und Silberlachs · Denali Highway · Fairbanks</div>
+          <p>Allison Point in Valdez ab Ende Juli, Seward-Silver-Derby Mitte August, Äschen am Denali Highway, Chena Hot Springs. Dalton nur bis Arctic Circle, wenn Budget Luft hat.</p>
+          <div class="meter"><i style="width:63.4%"></i><b class="soft" style="left:95.6%"></b><b style="left:100%"></b></div>
+          <div class="mlab"><span>116 US-Tage</span><span class="r">183</span></div>
+        </div>
+        <div class="ph us">
+          <div class="when">21. August – 25. September</div>
+          <h3>Kenai, Seward, Homer</h3>
+          <div class="where">Silberlachs Spätlauf · Regenbogenforelle · Nordlichter</div>
+          <p>Ab 20. August inserieren (Truck und Kabine getrennt), Rückflug buchen. Herbstfarben ab Anfang September, Nordlichter ab Ende August.</p>
+          <div class="meter"><i style="width:83.1%"></i><b class="soft" style="left:95.6%"></b><b style="left:100%"></b></div>
+          <div class="mlab"><span>152 US-Tage</span><span class="r">183</span></div>
+        </div>
+        <div class="ph us">
+          <div class="when">26. September – 5. Oktober</div>
+          <h3>Anchorage, Heimflug</h3>
+          <div class="where">Übergabe · Ausreise vor I-94-Ablauf</div>
+          <p>Condor nonstop fliegt nur bis Mitte September, danach über Seattle. Tagesliste sichern, Ummeldung und Krankenkasse nach der Rückkehr.</p>
+          <div class="meter"><i style="width:88.5%"></i><b class="soft" style="left:95.6%"></b><b style="left:100%"></b></div>
+          <div class="mlab"><span>162 US-Tage · 13 Tage Puffer</span><span class="r">183</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <h2>Straßen &amp; Termine</h2>
+      <div class="tbl-wrap"><table>
+        <tr><th>Was</th><th>Wann</th></tr>
+        <tr><td>Denali Highway, McCarthy Road</td><td class="num">ab ca. 1. Mai</td></tr>
+        <tr><td>Top of the World Highway (Grenze Dawson)</td><td class="num">22. Mai – 15. Sep</td></tr>
+        <tr><td>Russian River Sockeye</td><td class="num">ab 11. Jun</td></tr>
+        <tr><td>Condor Frankfurt–Anchorage nonstop</td><td class="num">Mitte Mai – Mitte Sep</td></tr>
+        <tr><td>Denali Park Road, Bus bis Eielson/Wonder Lake</td><td class="num">2027 erwartet</td></tr>
+        <tr><td>Dump-Stationen, Campgrounds</td><td class="num">Mai – Sep offen</td></tr>
+        <tr><td>Erster Frost Interior</td><td class="num">Anfang Sep</td></tr>
+      </table></div>
+    </div>
+
+    <div class="sec">
+      <h2>Nicht im Plan</h2>
+      <ul>
+        <li>Winter in Alaska. Verlängerung über 175 US-Tage.</li>
+        <li>Dalton Highway bis Deadhorse (700–900 $ Sprit, Polarmeer nur per Tour). Arctic Circle als Tagesausflug bleibt optional.</li>
+        <li>Heilbutt-Charter (350–500 $ plus 20 $ Stempel pro Tag). Optional, wenn im August Budget übrig ist.</li>
+        <li>Jagd, Schusswaffe, Fischversand per Kurier, Kauf in Kanada.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== ANGELN ===================== -->
+  <section class="view" id="v-fisch" role="tabpanel" aria-label="Angeln" hidden>
+    <div class="sec" style="margin-top:14px">
+      <h2>Was wann beißt <small>Southcentral, vom Ufer</small></h2>
+      <div class="legend"><span><i style="background:var(--surface-2)"></i>nichts</span><span><i style="background:var(--seq1)"></i>früh oder spät</span><span><i style="background:var(--seq2)"></i>gut</span><span><i style="background:var(--seq3)"></i>Peak</span><span><i style="background:repeating-linear-gradient(135deg,var(--surface-2) 0 3px,var(--limit-soft) 3px 6px)"></i>gesperrt</span></div>
+      <div class="tbl-wrap"><table class="cal">
+        <tr><th>Art</th><th>Mai</th><th>Jun</th><th>Jul</th><th>Aug</th><th>Sep</th></tr>
+        <tr><td>Sockeye<br><span class="note">Russian River, Kenai, Kasilof</span></td><td><span class="c">–</span></td><td><span class="c c2">ab 11.</span></td><td><span class="c c3">Peak</span></td><td><span class="c c1">spät</span></td><td><span class="c">–</span></td></tr>
+        <tr><td>Silberlachs<br><span class="note">Valdez, Seward, Kenai</span></td><td><span class="c">–</span></td><td><span class="c">–</span></td><td><span class="c c1">Ende</span></td><td><span class="c c3">Peak</span></td><td><span class="c c3">Peak</span></td></tr>
+        <tr><td>Pink<br><span class="note">Valdez, Whittier</span></td><td><span class="c">–</span></td><td><span class="c">–</span></td><td><span class="c c2">gut</span></td><td><span class="c c3">Peak</span></td><td><span class="c c1">spät</span></td></tr>
+        <tr><td>Heilbutt vom Ufer<br><span class="note">Homer Spit, Anchor Point</span></td><td><span class="c c2">gut</span></td><td><span class="c c2">gut</span></td><td><span class="c c2">gut</span></td><td><span class="c c2">gut</span></td><td><span class="c c1">spät</span></td></tr>
+        <tr><td>Regenbogen, Dolly<br><span class="note">Kenai, Russian</span></td><td><span class="c">–</span></td><td><span class="c c1">früh</span></td><td><span class="c c1">ok</span></td><td><span class="c c2">gut</span></td><td><span class="c c3">Peak</span></td></tr>
+        <tr><td>Äsche<br><span class="note">Denali Hwy, Interior</span></td><td><span class="c">–</span></td><td><span class="c c2">gut</span></td><td><span class="c c3">Peak</span></td><td><span class="c c3">Peak</span></td><td><span class="c c2">gut</span></td></tr>
+        <tr><td>Königslachs<br><span class="note">Kenai</span></td><td><span class="c cx">zu</span></td><td><span class="c cx">zu</span></td><td><span class="c cx">zu</span></td><td><span class="c cx">zu</span></td><td><span class="c cx">zu</span></td></tr>
+      </table></div>
+      <p class="note">Kenai-Kings waren 2026 komplett gesperrt, für 2027 keine Öffnung annehmen. Pinks sind auf der Kenai nur in geraden Jahren stark, Valdez hat Brutanstalten und jedes Jahr Fisch. ADF&amp;G-Prognose im Frühjahr 2027 lesen.</p>
+    </div>
+
+    <div class="sec">
+      <h2>Regeln, die Geld kosten</h2>
+      <ul>
+        <li><strong>Lizenz:</strong> Jahreslizenz Nonresident 100 $ (Kalenderjahr), online im ADF&amp;G-Store, e-signiert aufs Handy. Kein King-Stamp nötig, solange Kings zu sind.</li>
+        <li><strong>Emergency Orders</strong> schlagen jede gedruckte Regel. Vor jedem Angeltag die EO-Seite der Region lesen.</li>
+        <li><strong>Russian River Fly-only-Zone</strong> 11. Juni bis 20. August: Fliege, Blei mindestens 18 Zoll oberhalb. Fang innerhalb 12 Fuß bei sich behalten.</li>
+        <li><strong>Fischabfälle</strong> klein hacken und in die Strömung werfen. Falsche Entsorgung 300–1.000 $ Strafe und zieht Bären an.</li>
+        <li><strong>Filzsohlen</strong> sind in Alaska-Süßwasser verboten. Gummisohlen.</li>
+        <li><strong>Bären:</strong> Spray griffbereit (in Anchorage kaufen, fliegt nicht mit), Essen und Fisch nur in der Kabine oder im Fahrerhaus, nie draußen. Fisch an der Leine und Bär kommt: Leine kappen, Fang aufgeben.</li>
+        <li><strong>Fisch mit nach Hause:</strong> bis 20 kg ausgenommen und gefroren in die EU erlaubt. Verarbeiter in Homer und Seward vakuumieren und frosten.</li>
+      </ul>
+    </div>
+
+    <div class="sec">
+      <h2>Ausrüstung für den Einstieg <small>in Anchorage kaufen</small></h2>
+      <ul>
+        <li>Spinnrute 9 ft, medium-heavy, Rolle Größe 4000, geflochtene Schnur 30 lb plus Mono-Vorfach 20 lb. Zusammen 150–250 $.</li>
+        <li>Sockeye: Fliegen (Russian River Fly, Coho Fly) und Blei zum „flossing“. Silberlachs: Vibrax-Spinner Größe 4–5, Pixee-Löffel. Pinks: kleine Blinker pink.</li>
+        <li>Filetiermesser, Fischtöter, Zange, Maßband, Vakuumbeutel, Kühlbox mit Eis.</li>
+        <li>Watthose optional (150 $), Gummistiefel reichen oft. Polbrille, Regenjacke, Handschuhe.</li>
+        <li>Bärenspray (50 $), Sawyer-Wasserfilter, Mückennetz für Juni und Juli.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ===================== GELD ===================== -->
+  <section class="view" id="v-geld" role="tabpanel" aria-label="Geld" hidden>
+    <div class="sec" style="margin-top:14px">
+      <h2>Budget <small>ohne Fahrzeugkapital, 1 € = 1,10 $</small></h2>
+      <div class="totals">
+        <div class="stat s1"><div class="l">Sparplan</div><div class="v">14.650 €</div><div class="h">alles klappt, kein Extra</div></div>
+        <div class="stat s2"><div class="l">Realistisch</div><div class="v">24.500 €</div><div class="h">mit Puffer und Wertverlust 20 %</div></div>
+      </div>
+      <div class="chart" role="img" aria-label="Budget nach Posten, Sparplan gegen realistisch, in Euro">
+        <div class="legend"><span><i style="background:var(--s1)"></i>Sparplan</span><span><i style="background:var(--s2)"></i>Realistisch</span></div>
+        <div class="row"><div class="lab">Fahrzeug<br><span class="note">Zulassung, Versicherung, Reparatur, Wertverlust, Strom</span></div><div class="bars"><div class="bar s1" style="width:50.6%" tabindex="0"><span class="tip">Sparplan: 4.250 €</span><span class="v">4.250</span></div><div class="bar s2" style="width:100%" tabindex="0"><span class="tip">Realistisch: 8.400 €</span><span class="v">8.400</span></div></div></div>
+        <div class="row"><div class="lab">Sprit<br><span class="note">ca. 12.000 km, 20 l/100 km</span></div><div class="bars"><div class="bar s1" style="width:34.5%" tabindex="0"><span class="tip">Sparplan: 2.900 €</span><span class="v">2.900</span></div><div class="bar s2" style="width:45.2%" tabindex="0"><span class="tip">Realistisch: 3.800 €</span><span class="v">3.800</span></div></div></div>
+        <div class="row"><div class="lab">Essen &amp; Leben<br><span class="note">Essen, Camping, Propan</span></div><div class="bars"><div class="bar s1" style="width:28%" tabindex="0"><span class="tip">Sparplan: 2.350 €</span><span class="v">2.350</span></div><div class="bar s2" style="width:42.3%" tabindex="0"><span class="tip">Realistisch: 3.550 €</span><span class="v">3.550</span></div></div></div>
+        <div class="row"><div class="lab">Flüge &amp; Visum</div><div class="bars"><div class="bar s1" style="width:17.3%" tabindex="0"><span class="tip">Sparplan: 1.450 €</span><span class="v">1.450</span></div><div class="bar s2" style="width:24.4%" tabindex="0"><span class="tip">Realistisch: 2.050 €</span><span class="v">2.050</span></div></div></div>
+        <div class="row"><div class="lab">Reserve &amp; Sonstiges</div><div class="bars"><div class="bar s1" style="width:15.5%" tabindex="0"><span class="tip">Sparplan: 1.300 €</span><span class="v">1.300</span></div><div class="bar s2" style="width:26.2%" tabindex="0"><span class="tip">Realistisch: 2.200 €</span><span class="v">2.200</span></div></div></div>
+        <div class="row"><div class="lab">Internet<br><span class="note">Starlink Mini, Roam, SIM</span></div><div class="bars"><div class="bar s1" style="width:8.3%" tabindex="0"><span class="tip">Sparplan: 700 €</span><span class="v">700</span></div><div class="bar s2" style="width:17.9%" tabindex="0"><span class="tip">Realistisch: 1.500 €</span><span class="v">1.500</span></div></div></div>
+        <div class="row"><div class="lab">Angeln &amp; Ausrüstung</div><div class="bars"><div class="bar s1" style="width:9.5%" tabindex="0"><span class="tip">Sparplan: 800 €</span><span class="v">800</span></div><div class="bar s2" style="width:16.7%" tabindex="0"><span class="tip">Realistisch: 1.400 €</span><span class="v">1.400</span></div></div></div>
+        <div class="row"><div class="lab">Auslands-KV</div><div class="bars"><div class="bar s1" style="width:6.5%" tabindex="0"><span class="tip">Sparplan: 550 €</span><span class="v">550</span></div><div class="bar s2" style="width:10.7%" tabindex="0"><span class="tip">Realistisch: 900 €</span><span class="v">900</span></div></div></div>
+        <div class="row"><div class="lab">Einlagerung</div><div class="bars"><div class="bar s1" style="width:4.2%" tabindex="0"><span class="tip">Sparplan: 350 €</span><span class="v">350</span></div><div class="bar s2" style="width:8.3%" tabindex="0"><span class="tip">Realistisch: 700 €</span><span class="v">700</span></div></div></div>
+        <div class="axis"><span>0 €</span><span>4.200 €</span><span>8.400 €</span></div>
+      </div>
+      <p class="note" style="margin-top:8px">Gehalt läuft weiter (25 h), das trägt den Cashflow. Größter Hebel nach unten: billigerer Truck, dann mehr Pannenrisiko. Größter Hebel nach oben: schlecht getimter Verkauf.</p>
+    </div>
+
+    <div class="sec">
+      <h2>Alle Posten</h2>
+      <div class="tbl-wrap"><table>
+        <tr><th>Posten</th><th class="num">Spar</th><th class="num">Real</th></tr>
+        <tr><td>Flüge FRA→PDX, ANC→FRA (one-way)</td><td class="num">1.000</td><td class="num">1.500</td></tr>
+        <tr><td>B-2 inkl. Integrity Fee, Konsulat</td><td class="num">450</td><td class="num">550</td></tr>
+        <tr><td>Auslandskrankenversicherung 7 Monate</td><td class="num">550</td><td class="num">900</td></tr>
+        <tr><td>Zulassung SD, Excise Tax, Mailbox, Permit, Inspektion</td><td class="num">800</td><td class="num">1.100</td></tr>
+        <tr><td>Kfz-Versicherung 7 Monate</td><td class="num">550</td><td class="num">1.000</td></tr>
+        <tr><td>Reparaturreserve, Reifen, Service</td><td class="num">1.000</td><td class="num">2.200</td></tr>
+        <tr><td>Wertverlust beim Verkauf (10 % / 20 %)</td><td class="num">1.400</td><td class="num">3.200</td></tr>
+        <tr><td>Solar, Batterie, Wechselrichter</td><td class="num">500</td><td class="num">900</td></tr>
+        <tr><td>Sprit</td><td class="num">2.900</td><td class="num">3.800</td></tr>
+        <tr><td>Essen (10 $ / 14 $ pro Tag)</td><td class="num">1.900</td><td class="num">2.700</td></tr>
+        <tr><td>Camping, Dump, Wasser, Dusche, Wäsche</td><td class="num">300</td><td class="num">600</td></tr>
+        <tr><td>Propan</td><td class="num">150</td><td class="num">250</td></tr>
+        <tr><td>Angeln: Lizenz, Rute, Köder, Messer, Beutel</td><td class="num">400</td><td class="num">600</td></tr>
+        <tr><td>Starlink Mini, Roam, US-SIM</td><td class="num">700</td><td class="num">1.500</td></tr>
+        <tr><td>Ausrüstung: Schlafsack, Regen, Kocher, Filter, Werkzeug</td><td class="num">400</td><td class="num">800</td></tr>
+        <tr><td>Einlagerung Deutschland</td><td class="num">350</td><td class="num">700</td></tr>
+        <tr><td>Sonstiges, Reserve 10 %</td><td class="num">1.300</td><td class="num">2.200</td></tr>
+        <tr class="total"><td>Summe ohne Fahrzeugkapital</td><td class="num">14.650</td><td class="num">24.500</td></tr>
+      </table></div>
+      <p class="note">Gebundenes Kapital zusätzlich: 12.000–18.000 $ im März, Rückfluss 80–90 % im Oktober. Essen ist mit 10 $/Tag knapp gerechnet, Alaska-Preise liegen 30–40 % über den Lower 48, Lachs als Protein hilft.</p>
+    </div>
+  </section>
+
+  <!-- ===================== LISTE ===================== -->
+  <section class="view" id="v-liste" role="tabpanel" aria-label="Checkliste" hidden>
+    <div class="sec" style="margin-top:14px">
+      <h2>Checkliste <small id="prog-text">0 von 35 erledigt</small></h2>
+      <div class="prog"><i id="prog"></i></div>
+      <div class="save" id="save-status">Haken werden geladen…</div>
+
+      <div class="grp"><h3>September – Oktober 2026</h3>
+        <div class="check"><input type="checkbox" id="c01"><label for="c01">Go/No-Go mit FloodWaive: schriftliche Zusage zur Remote-Phase März–Oktober<span class="d">Alles andere hängt daran</span></label></div>
+        <div class="check"><input type="checkbox" id="c02"><label for="c02">Meldeadresse bei Familie oder Freunden zusagen lassen (Zimmer mit Schlüssel)</label></div>
+        <div class="check"><input type="checkbox" id="c03"><label for="c03">Kassensturz: 15.000–18.000 $ liquide bis Februar?</label></div>
+        <div class="check"><input type="checkbox" id="c04"><label for="c04">Kündigungsfrist der Wohnung prüfen</label></div>
+      </div>
+      <div class="grp"><h3>bis 30. November 2026</h3>
+        <div class="check"><input type="checkbox" id="c05"><label for="c05">Wohnung kündigen<span class="d">3 Monate Frist, bis 30.11. für Auszug 28.02.</span></label></div>
+        <div class="check"><input type="checkbox" id="c06"><label for="c06">DS-160 ausfüllen, Visumtermin buchen (Frankfurt, Berlin oder München)</label></div>
+        <div class="check"><input type="checkbox" id="c07"><label for="c07">Krankenkasse schriftlich: Ausstrahlung bei befristeter Tätigkeit in den USA</label></div>
+        <div class="check"><input type="checkbox" id="c08"><label for="c08">DRV: Bescheinigung D/USA 101 beantragen</label></div>
+      </div>
+      <div class="grp"><h3>Dezember 2026 – Januar 2027</h3>
+        <div class="check"><input type="checkbox" id="c09"><label for="c09">B-2-Interview<span class="d">Arbeitsvertrag, Vereinbarung, Kontoauszüge, Reiseplan, Rückkehrdatum mitnehmen</span></label></div>
+        <div class="check"><input type="checkbox" id="c10"><label for="c10">Langzeit-Auslandskrankenversicherung abschließen, 1. März bis 15. Oktober, USA-Deckung, Rücktransport</label></div>
+        <div class="check"><input type="checkbox" id="c11"><label for="c11">South-Dakota-Mailbox einrichten (USPS-Formular 1583, Notar)</label></div>
+        <div class="check"><input type="checkbox" id="c12"><label for="c12">Internationaler Führerschein holen</label></div>
+        <div class="check"><input type="checkbox" id="c13"><label for="c13">Hinflug FRA→Portland um den 10. März buchen (one-way)</label></div>
+        <div class="check"><input type="checkbox" id="c14"><label for="c14">Zweite Kreditkarte, Limits auf 5.000 €, Bank über Reisezeitraum informieren, App-TAN prüfen</label></div>
+      </div>
+      <div class="grp"><h3>Januar – Februar 2027</h3>
+        <div class="check"><input type="checkbox" id="c15"><label for="c15">Fahrzeugmarkt Portland/Seattle beobachten, Besichtigungen für 10.–20. März vereinbaren</label></div>
+        <div class="check"><input type="checkbox" id="c16"><label for="c16">Progressive-Quote mit deutschem Führerschein und SD-Adresse testen</label></div>
+        <div class="check"><input type="checkbox" id="c17"><label for="c17">Zahnarzt, Medikamente für 7 Monate mit englischem Attest, Tetanus auffrischen</label></div>
+        <div class="check"><input type="checkbox" id="c18"><label for="c18">Einlagerung organisieren</label></div>
+        <div class="check"><input type="checkbox" id="c19"><label for="c19">Steuerberater: Wohnsitz bei Familie und 183-Tage-Regel bestätigen lassen</label></div>
+        <div class="check"><input type="checkbox" id="c20"><label for="c20">FloodWaive-Vereinbarung unterschreiben, Laptop verschlüsselt, VPN eingerichtet</label></div>
+      </div>
+      <div class="grp"><h3>März 2027</h3>
+        <div class="check"><input type="checkbox" id="c21"><label for="c21">Auszug, Ummeldung zu Familie, Abflug</label></div>
+        <div class="check"><input type="checkbox" id="c22"><label for="c22">Kauf: VIN-Check, Werkstatt-Inspektion, Title clean, Bill of Sale, Odometer-Erklärung</label></div>
+        <div class="check"><input type="checkbox" id="c23"><label for="c23">Oregon Trip Permit (21 Tage), Versicherung abschließen</label></div>
+        <div class="check"><input type="checkbox" id="c24"><label for="c24">SD-Zulassung per Post, Nachsendung nach Tok oder Anchorage einrichten</label></div>
+        <div class="check"><input type="checkbox" id="c25"><label for="c25">Starlink Mini, Solar und Batterie, Werkzeug, zweites Reserverad, Kompressor</label></div>
+        <div class="check"><input type="checkbox" id="c26"><label for="c26">Arbeitsrhythmus 5–10 Uhr eine Woche testen</label></div>
+        <div class="check"><input type="checkbox" id="c27"><label for="c27">I-94 nach Einreise online prüfen, Tagesliste starten</label></div>
+      </div>
+      <div class="grp"><h3>Mai 2027</h3>
+        <div class="check"><input type="checkbox" id="c28"><label for="c28">Einreise Alaska: neues I-94 verlangen, innerhalb 24 h online prüfen</label></div>
+        <div class="check"><input type="checkbox" id="c29"><label for="c29">ADF&amp;G-Jahreslizenz kaufen, Regelheft Southcentral laden, EO-Seite als Lesezeichen</label></div>
+        <div class="check"><input type="checkbox" id="c30"><label for="c30">Bärenspray, Rute, Rolle, Köder, Propan in Anchorage kaufen</label></div>
+      </div>
+      <div class="grp"><h3>August – Oktober 2027</h3>
+        <div class="check"><input type="checkbox" id="c31"><label for="c31">Inserate ab 20. August, Truck und Kabine getrennt</label></div>
+        <div class="check"><input type="checkbox" id="c32"><label for="c32">Rückflug buchen (nach Mitte September über Seattle)</label></div>
+        <div class="check"><input type="checkbox" id="c33"><label for="c33">Übergabe Fahrzeug bis 30. September</label></div>
+        <div class="check"><input type="checkbox" id="c34"><label for="c34">Ausreise vor I-94-Ablauf, US-Tage unter 175, Tagesliste sichern</label></div>
+        <div class="check"><input type="checkbox" id="c35"><label for="c35">Rückkehr: Ummeldung, Krankenkasse informieren, FloodWaive-Vereinbarung beenden</label></div>
+      </div>
+    </div>
+  </section>
+  </main>
+</div>
+
+<nav class="tabs" aria-label="Bereiche"><div class="in" role="tablist">
+  <button type="button" role="tab" data-view="plan" aria-selected="true">Plan</button>
+  <button type="button" role="tab" data-view="route" aria-selected="false">Route</button>
+  <button type="button" role="tab" data-view="fisch" aria-selected="false">Angeln</button>
+  <button type="button" role="tab" data-view="geld" aria-selected="false">Geld</button>
+  <button type="button" role="tab" data-view="liste" aria-selected="false">Liste</button>
+</div></nav>
+
+<script>
+(function(){
+  var SOURCE = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+  var stateEl = document.getElementById('plan-state');
+  var state;
+  try { state = JSON.parse(stateEl.textContent); } catch (e) { state = {done:{}}; }
+  if (!state || typeof state !== 'object') state = {done:{}};
+  if (!state.done) state.done = {};
+
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.tabs button'));
+  var views = Array.prototype.slice.call(document.querySelectorAll('.view'));
+  function show(id){
+    tabs.forEach(function(b){ b.setAttribute('aria-selected', String(b.getAttribute('data-view') === id)); });
+    views.forEach(function(v){ v.hidden = (v.id !== 'v-' + id); });
+    window.scrollTo(0, 0);
+    try { history.replaceState(null, '', '#' + id); } catch (e) {}
+  }
+  tabs.forEach(function(b){ b.addEventListener('click', function(){ show(b.getAttribute('data-view')); }); });
+  var initial = (location.hash || '#plan').slice(1);
+  show(views.some(function(v){ return v.id === 'v-' + initial; }) ? initial : 'plan');
+
+  var boxes = Array.prototype.slice.call(document.querySelectorAll('.check input'));
+  var status = document.getElementById('save-status');
+  var prog = document.getElementById('prog');
+  var progT = document.getElementById('prog-text');
+  function render(){
+    var n = 0;
+    boxes.forEach(function(b){
+      var on = !!state.done[b.id];
+      b.checked = on;
+      b.parentNode.classList.toggle('done', on);
+      if (on) n++;
+    });
+    prog.style.width = (boxes.length ? 100 * n / boxes.length : 0) + '%';
+    progT.textContent = n + ' von ' + boxes.length + ' erledigt';
+  }
+  render();
+
+  var LS = 'alaska2027-done';
+  var artifact = null;
+  var mode = 'local';
+  function loadLocal(){ try { var d = JSON.parse(localStorage.getItem(LS) || 'null'); if (d && d.done) return d; } catch (e) {} return null; }
+  function saveLocal(){ try { localStorage.setItem(LS, JSON.stringify(state)); } catch (e) {} }
+  function fallback(){
+    mode = 'local';
+    var d = loadLocal();
+    if (d) { state = d; render(); }
+    status.textContent = 'Haken werden nur auf diesem Gerät gespeichert.';
+  }
+  if (window.claude && typeof window.claude.use === 'function') {
+    window.claude.use('artifact').then(function(a){
+      if (a) { artifact = a; mode = 'artifact'; status.textContent = 'Haken werden in der Seite gespeichert und auf allen Geräten angezeigt.'; }
+      else { fallback(); }
+    }).catch(fallback);
+  } else { fallback(); }
+
+  var timer = null;
+  function publish(){
+    var json = JSON.stringify(state).replace(/</g, '\\u003c');
+    var html = SOURCE.replace(/<script id="plan-state" type="application\/json">[\s\S]*?<\/script>/, '<script id="plan-state" type="application/json">' + json + '<\/script>');
+    status.textContent = 'Speichern…';
+    artifact.publish(html).then(function(){ status.textContent = 'Gespeichert.'; }).catch(function(e){
+      status.textContent = (e && e.code === 'conflict') ? 'Neuere Version geladen, bitte nochmal anhaken.' : 'Nur auf diesem Gerät gespeichert.';
+    });
+  }
+  boxes.forEach(function(b){
+    b.addEventListener('change', function(){
+      if (b.checked) state.done[b.id] = true; else delete state.done[b.id];
+      render();
+      saveLocal();
+      if (mode === 'artifact' && artifact) { clearTimeout(timer); timer = setTimeout(publish, 1500); }
+    });
+  });
+})();
+</script>

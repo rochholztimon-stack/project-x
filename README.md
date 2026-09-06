@@ -9,6 +9,7 @@ Planungs-Repo. Die Entscheidungen stehen in [SPEC.md](SPEC.md), die Belege in
 |---|---|
 | [SPEC.md](SPEC.md) | Ziel, Eckpunkte, die drei harten Grenzen (Visum, 183 Tage, Geld), Fahrzeugweg, Route, Budget, Risiken, Erfolgs-Checks, Timeline |
 | [docs/quellen.md](docs/quellen.md) | Verwendete Quellen mit Datum |
+| [site/index.html](site/index.html) | Mobile Übersichtsseite (als Artifact veröffentlicht), mit Checkliste |
 | [.claude/skills/grill-me/SKILL.md](.claude/skills/grill-me/SKILL.md) | Interview-Skill, mit dem die Spec entstanden ist |
 
 ## Kurzfassung der Spec
@@ -28,7 +29,9 @@ Planungs-Repo. Die Entscheidungen stehen in [SPEC.md](SPEC.md), die Belege in
    18.000–22.000 €. Die Differenz ist fast nur Fahrzeugrisiko.
 6. **Arbeit:** 25 h/Woche remote, Kernzeit 5–10 Uhr Alaska (15–20 Uhr Deutschland),
    Starlink Mini am Fahrzeug. Compliance-Checkliste für FloodWaive in Abschnitt 5 der Spec.
-7. **GKV bleibt** (Pflichtversicherung bei laufendem Job), zahlt in den USA aber nichts.
+7. **Wohnsitz in Mexiko** bringt für Alaska nichts und kostet GKV, Sozialversicherung und die
+   Arbeitgeber-Zusage. Antwort in Spec 4.4.
+8. **GKV bleibt** (Pflichtversicherung bei laufendem Job), zahlt in den USA aber nichts.
    Langzeit-Auslandskrankenversicherung mit USA-Deckung ist Pflicht. Meldeadresse in
    Deutschland behalten (Familie), nicht abmelden.
 

@@ -113,6 +113,34 @@ Diese drei Dinge entscheiden, ob der Plan legal und finanzierbar ist. Alles ande
 - Kreditkarte mit mindestens 5.000 € Limit (Kaution, Reparatur, Notfall) und eine zweite Karte
   eines anderen Anbieters. Bargeld 1.000–2.000 $ für Privatkauf.
 
+### 4.4 Wohnsitz in Mexiko? Nein, für diese Reise nicht
+
+Deine Frage vom 6. September: Was, wenn du deinen Wohnsitz nach Mexiko verlegst? Antwort:
+Für Alaska bringt es nichts und macht drei Dinge kaputt.
+
+- **USA unverändert:** Als deutscher Staatsbürger brauchst du weiter B-2 oder ESTA. Die
+  180 Tage pro Einreise und die 183-Tage-Steuerregel gelten genauso. Die ESTA-Sonderregel
+  (Rückkehr ins Wohnsitzland setzt die 90 Tage zurück) hilft in Alaska nicht.
+- **FloodWaive:** Dauerhafter Wohnsitz in Mexiko heißt Beschäftigungsort Mexiko. Damit enden
+  deutsche Sozialversicherung und GKV (keine Ausstrahlung, weil nicht befristet), und
+  FloodWaive bekommt Lohnsteuer- und Betriebsstättenrisiko in Mexiko. Das trägt kaum ein
+  Arbeitgeber, du müsstest über einen Employer of Record oder als Freelancer arbeiten.
+- **Steuer und Versicherung:** Ohne deutschen Wohnsitz keine unbeschränkte Steuerpflicht in
+  Deutschland, dafür mexikanische Steuerpflicht mit Welteinkommen, sobald du dort eine Wohnung
+  hast oder deinen Lebensmittelpunkt. Statt DBA Deutschland–USA gilt DBA Mexiko–USA mit
+  derselben 183-Tage-Logik. Deutsche Langzeit-Reisekrankenversicherungen setzen einen Wohnsitz
+  in Deutschland voraus, du bräuchtest eine internationale Expat-Police (100–200 €/Monat).
+- **Aufwand:** Residente Temporal beim mexikanischen Konsulat in Deutschland beantragen,
+  Nachweis von etwa 4.000–4.500 $ Nettoeinkommen pro Monat über 6 Monate oder rund 70.000 $
+  Guthaben (Schwellen je Konsulat verschieden, prüfen), dann innerhalb von 180 Tagen
+  persönlich in Mexiko die Karte abholen, jährlich verlängern. Ein Touristen-FMM (180 Tage)
+  begründet keinen Wohnsitz.
+- **Fazit:** Nur sinnvoll, wenn du wirklich mehrere Jahre in Mexiko leben willst und
+  FloodWaive das mitträgt oder du kündigst. Für 2027 bleibt die Meldeadresse bei Familie
+  oder Freunden die richtige Lösung. Dasselbe gilt für "einfach abmelden ohne neuen
+  Wohnsitz": Das erzeugt genau die Probleme mit Krankenversicherung, Steuer, Bank und Visum,
+  die diese Spec vermeidet.
+
 ---
 
 ## 5. Compliance-Checkliste FloodWaive (du prüfst sie selbst als Personalleiter)
@@ -316,6 +344,7 @@ brauchst. Kauf in Alaska scheidet wegen März-Start und Frühjahrs-Verkäufermar
 ## 10. Nicht-Ziele
 
 - Kein Winter in Alaska, keine Verlängerung über die 175-US-Tage hinaus.
+- Kein Wohnsitz in Mexiko und keine Abmeldung ohne deutschen Wohnsitz (Abschnitt 4.4).
 - Kein Wohnmobil aus Deutschland verschiffen, kein Mietfahrzeug.
 - Keine Jagd, keine Schusswaffe (für Nonimmigrants ohne Jagdlizenz verboten, Import per
   ATF-Formular 6NIA, Kanada-Transit zusätzlich problematisch). Bärenspray reicht.
