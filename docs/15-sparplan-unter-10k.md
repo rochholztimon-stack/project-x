@@ -125,3 +125,51 @@ einzelne Maßnahme.
 4. Zwei Versicherungs-Quotes (Progressive, National General) mit "liability only".
 5. Beim Kauf: Toyota, Pop-up, unter 12.000 $ zusammen. Jeder Tausender mehr kostet 4 %
    Steuer und 8 % Wertverlust, also 120 € pro 1.000 $.
+
+## 7. Und 2.000 € insgesamt?
+
+Nein, nicht mit dieser Reise. Die Untergrenze aus Posten, die niemand wegverhandelt:
+
+| Posten | 6 Monate, B-2 | 3 Monate, ESTA |
+|---|---|---|
+| Visum bzw. ESTA | 440 | 38 |
+| Flüge hin und zurück | 800 | 850 |
+| Auslandskrankenversicherung | 480 | 210 |
+| Angellizenz | 90 | 90 |
+| **Boden ohne Essen, Fahrzeug, Sprit, Internet** | **1.810** | **1.190** |
+
+Ab hier kommt alles dazu, was du zum Leben und Arbeiten brauchst. Vier Reiseformen, jeweils
+das absolute Minimum, ohne Reserve, ohne Wertverlust, Essen 5 $/Tag, alles gebraucht,
+immer frei stehen:
+
+| Variante | Dauer | Fahrzeug | Minimum | Was du dafür in Kauf nimmst |
+|---|---|---|---|---|
+| A: wie geplant, März ab Portland | 6 Monate | Toyota + Pop-up, nur Haftpflicht | **≈ 5.500 €** | keine Reserve: eine Panne oder ein schlechter Verkauf sprengt es sofort |
+| B: Alaska direkt ab Ende April, Kenai-Basis | 5 Monate | wie A, in Anchorage gekauft | **≈ 4.400 €** | kein BC, kein Yukon, wenig Kilometer, keine Reserve |
+| C: Hochsaison mit ESTA, 15. Juni bis 12. September | 3 Monate | billiger Truck 5.000–6.000 $, in Anchorage gekauft und verkauft | **≈ 3.100 €** | kein B-2 nötig, aber Kauf und Verkauf in 12 Wochen, Wertverlust-Risiko hoch, Remote-Arbeit auf ESTA dieselbe Grauzone |
+| D: 3 Monate ESTA ohne Fahrzeug: Zelt, Bus, Mitfahren, Arbeit in Bibliotheken | 3 Monate | keins | **≈ 2.700 €** | Zelt im Bärenland, Arbeit nur wenn Bibliotheken offen sind (10–18 Uhr, also asynchron nachmittags), kaum Mobilität, Angeln nur zu Fuß erreichbar (Soldotna, Homer Spit, Seward) |
+
+Selbst ohne Fahrzeug bleibt es bei rund 2.700 €. Auf 2.000 kommst du nur, wenn Flüge unter
+600 € liegen, du jede Nacht kostenlos stehst und keinen Puffer hast.
+
+### Die Sicht, in der 2.000 € stimmt: Mehrkosten gegenüber Zuhause
+
+Du kündigst die Wohnung. Miete, Nebenkosten, Strom, Internet und Essen zu Hause fallen
+7 Monate lang weg. Bei 900 € Warmmiete, 80 € Strom und Internet, 250 € Essen sind das
+rund 8.600 €, die du nicht ausgibst.
+
+| Plan | Reisekosten | minus gesparte Kosten zu Hause | Mehrkosten der Reise |
+|---|---|---|---|
+| Unter-10k-Plan | 9.500 € | 8.600 € | **≈ 900 €** (bei 700 € Miete: ≈ 2.300 €) |
+| Alaska direkt (5 Monate) | 8.300 € | 6.100 € (5 Monate) | ≈ 2.200 € |
+| Bequemer Sparplan | 14.650 € | 8.600 € | ≈ 6.000 € |
+
+Die Reise kostet dich also, gemessen an dem, was du sonst in Deutschland ausgibst, etwa
+1.000–2.500 € mehr. Das ist die ehrliche Zahl hinter "Richtung 2.000". Was diese Rechnung
+nicht enthält: Kaution und Umzug in eine neue Wohnung nach der Rückkehr (Kaution kommt
+zurück, Umzug 300–500 €) und das gebundene Fahrzeugkapital.
+
+**Empfehlung:** Bleib beim Unter-10k-Plan mit Reserve. Er kostet netto ungefähr das, was du
+zu Hause auch ausgeben würdest, und lässt dir 2.100 € Puffer, damit eine Panne die Reise
+nicht beendet. Variante C ist der ehrliche Kompromiss, wenn die absolute Summe zählt:
+3 Monate Hochsaison, 3.100 € plus etwas Wertverlust, ohne Visumsverfahren.
