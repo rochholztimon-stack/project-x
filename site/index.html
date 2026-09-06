@@ -159,10 +159,26 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
 .check label{flex:1;cursor:pointer}
 .check.done label{color:var(--muted);text-decoration:line-through}
 .check .d{display:block;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--muted)}
+
+/* jump chips and link lists */
+.jump{display:flex;gap:8px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding:12px 0 2px;margin:0 -16px;padding-left:16px;padding-right:16px;scrollbar-width:none}
+.jump::-webkit-scrollbar{display:none}
+.jump a{flex:0 0 auto;padding:7px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);color:var(--ink);text-decoration:none;font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.links{list-style:none;padding:0;margin:0;background:var(--surface);border-radius:10px;box-shadow:var(--shadow);overflow:hidden}
+.links li{margin:0;border-top:1px solid var(--line)}
+.links li:first-child{border-top:0}
+.links a{display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;padding:12px 14px;text-decoration:none;color:var(--ink);min-height:52px}
+.links a:active{background:var(--surface-2)}
+.links a b{display:block;font-weight:700}
+.links a small{display:block;color:var(--muted);font-size:13px;margin-top:1px}
+.links a::after{content:"›";font-family:'IBM Plex Mono',monospace;font-size:22px;color:var(--accent);line-height:1}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{position:relative;padding:6px 0 6px 34px}
+.steps li::before{counter-increment:s;content:counter(s);position:absolute;left:0;top:6px;width:24px;height:24px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:14px;display:grid;place-items:center}
 /* tabs */
 .tabs{position:fixed;left:0;right:0;bottom:0;z-index:10;background:var(--surface);border-top:1px solid var(--line);padding:0 0 env(safe-area-inset-bottom)}
-.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
-.tabs button{appearance:none;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:15px;letter-spacing:.08em;text-transform:uppercase;padding:11px 2px 12px;cursor:pointer}
+.tabs .in{max-width:640px;margin:0 auto;display:grid;grid-template-columns:repeat(6,1fr)}
+.tabs button{appearance:none;background:none;border:0;border-top:3px solid transparent;color:var(--muted);font-family:'Barlow Condensed',sans-serif;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;padding:11px 1px 12px;cursor:pointer}
 .tabs button[aria-selected="true"]{color:var(--accent);border-top-color:var(--accent)}
 .note{font-size:13px;color:var(--muted)}
 .hl{background:var(--accent-soft);border-radius:6px;padding:1px 5px}
@@ -189,7 +205,11 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       <div class="stat"><div class="l">Reisekosten</div><div class="v">9,5–24,5 k€</div><div class="h">Unter-10k-Plan bis realistisch</div></div>
     </div>
 
-    <div class="sec">
+    <nav class="jump" aria-label="Abschnitte">
+      <a href="#" data-jump="p-kurz">Kurzfassung</a><a href="#" data-jump="p-grenzen">Grenzen</a><a href="#" data-jump="p-fahrzeug">Fahrzeug</a><a href="#" data-jump="p-arbeit">Arbeit</a><a href="#" data-jump="p-wohnsitz">Wohnsitz</a><a href="#" data-jump="p-risiken">Risiken</a>
+    </nav>
+
+    <div class="sec" id="p-kurz">
       <h2>Kurzfassung</h2>
       <ul class="brief">
         <li><b>ESTA reicht nicht.</b> 90 Tage, Kanada setzt die Uhr nicht zurück. Du brauchst ein B-2-Visum, bis 180 Tage pro Einreise. Termin im November 2026 buchen.</li>
@@ -202,7 +222,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       </ul>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="p-grenzen">
       <h2>Drei harte Grenzen</h2>
       <div class="cards">
         <div class="card limit">
@@ -246,7 +266,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       </div>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="p-fahrzeug">
       <h2>Fahrzeug</h2>
       <div class="card">
         <h3>Toyota Tundra oder Tacoma 4x4 + gebrauchte Aufsetzkabine</h3>
@@ -276,35 +296,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
             <li><strong>In Kanada kaufen:</strong> Versicherung als Ausländer praktisch nicht möglich.</li>
           </ul>
         </details>
-        <details class="more">
-          <summary>Angebote suchen (Links mit Filtern)</summary>
-          <p class="note">Zielpreis: Truck plus Kabine zusammen unter 12.000 $. Jetzt Preise lernen und Suchagenten speichern, ernsthaft suchen ab Januar 2027.</p>
-          <p><strong>Truck</strong><br>
-          <a href="https://portland.craigslist.org/search/cto?query=tundra&min_price=5000&max_price=14000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2000">Tundra Portland (Privat, 4x4, clean title)</a><br>
-          <a href="https://seattle.craigslist.org/search/cto?query=tundra&min_price=5000&max_price=14000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2000">Tundra Seattle</a><br>
-          <a href="https://portland.craigslist.org/search/cto?query=tacoma&min_price=6000&max_price=14000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2005">Tacoma Portland</a><br>
-          <a href="https://portland.craigslist.org/search/cto?query=f250+4x4&min_price=5000&max_price=12000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2005">F-250 4x4 Portland</a><br>
-          <a href="https://portland.craigslist.org/search/cto?query=frontier+4x4&min_price=4000&max_price=10000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2005">Nissan Frontier Portland</a><br>
-          <a href="https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=97201&distance=100&entitySelectingHelper.selectedEntity=d2400&maxPrice=14000">CarGurus Tundra bis 14k, 100 Meilen um Portland</a><br>
-          <a href="https://www.facebook.com/marketplace/portland/vehicles?query=toyota%20tundra%204x4&maxPrice=14000">Facebook Marketplace Tundra Portland</a></p>
-          <p><strong>Pop-up und Kabine</strong><br>
-          <a href="https://portland.craigslist.org/search/rvs?query=four+wheel+camper&max_price=13000">Four Wheel Camper Portland</a><br>
-          <a href="https://portland.craigslist.org/search/rvs?query=palomino+backpack&max_price=8000">Palomino Backpack Portland</a><br>
-          <a href="https://portland.craigslist.org/search/rvs?query=pop+up+truck+camper&max_price=10000">Pop-up Truck Camper Portland</a><br>
-          <a href="https://seattle.craigslist.org/search/rvs?query=truck+camper&max_price=9000">Truck Camper Seattle</a><br>
-          <a href="https://www.rvtrader.com/Truck-Camper/rvs-for-sale?type=Truck%20Camper%7C198074&state=Oregon%7COR&price=1000%3A9000">RVTrader Oregon</a> · <a href="https://www.rvtrader.com/Truck-Camper/rvs-for-sale?type=Truck%20Camper%7C198074&state=Washington%7CWA&price=1000%3A9000">RVTrader Washington</a><br>
-          <a href="https://fourwheelcampers.com/used-campers/">Four Wheel Campers Gebrauchtbörse</a> · <a href="https://truckcamperadventure.com/classifieds/">Truck Camper Adventure Classifieds</a> · <a href="https://www.wanderthewest.com/forums/">Wander the West Forum</a><br>
-          <a href="https://www.facebook.com/marketplace/portland/search?query=four%20wheel%20camper&maxPrice=13000">Facebook Marketplace Four Wheel Camper</a></p>
-          <p><strong>Kombi</strong><br>
-          <a href="https://portland.craigslist.org/search/sss?query=truck+with+camper&max_price=16000">Truck with camper Portland</a> · <a href="https://seattle.craigslist.org/search/sss?query=truck+with+camper&max_price=16000">Seattle</a> · <a href="https://anchorage.craigslist.org/search/sss?query=truck+camper+combo&max_price=16000">Anchorage</a></p>
-          <p><strong>Hütte (Variante E)</strong><br>
-          <a href="https://anchorage.craigslist.org/search/ken/apa?max_price=900">Craigslist Kenai Peninsula Miete bis 900 $</a><br>
-          <a href="https://anchorage.craigslist.org/search/ken/roo?max_price=700">Zimmer Kenai Peninsula bis 700 $</a><br>
-          <a href="https://anchorage.craigslist.org/search/mat/apa?max_price=800">Mat-Su (Willow, Talkeetna) bis 800 $</a><br>
-          <a href="https://www.zillow.com/soldotna-ak/rentals/">Zillow Soldotna</a> · <a href="https://www.zillow.com/sterling-ak/rentals/">Sterling</a> · <a href="https://www.zillow.com/kasilof-ak/rentals/">Kasilof</a><br>
-          Facebook-Gruppen: „Kenai Peninsula Rentals“, „Soldotna Kenai Rentals“, „Kenai Peninsula Buy Sell Trade“</p>
-          <p class="note">Preisbänder, Warnzeichen und Nachrichtenvorlagen in docs/16 im Repo.</p>
-        </details>
+        <p class="note" style="margin-top:8px">Suchlinks mit Filtern für Truck, Kabine, Kombi und Hütte: Tab <a href="#" data-go="suche">Suche</a>.</p>
         <details class="more">
           <summary>Verkauf im Herbst</summary>
           <p><strong>Anchorage (Standard):</strong> ab 20. August inserieren, Übergabe 25.–30. September. Rechne mit 15–25 % unter Kaufpreis, dafür kein Rückweg.</p>
@@ -313,7 +305,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       </div>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="p-arbeit">
       <h2>Arbeit &amp; Compliance</h2>
       <div class="tz" aria-label="Zeitzonen">
         <div class="z"><div class="t">05–10</div><div class="n">Alaska, Kernzeit</div></div>
@@ -335,7 +327,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       </details>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="p-wohnsitz">
       <h2>Mexiko oder USA als Wohnsitz?</h2>
       <div class="verdict">
         <h3>Bringt für Alaska nichts und macht drei Dinge kaputt</h3>
@@ -370,7 +362,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       </div>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="p-risiken">
       <h2>Risiken <small>mit Gegenmaßnahme</small></h2>
       <ul class="risk">
         <li><span>B-2 wird abgelehnt</span><span class="chip mid">mittel</span><span class="m">Arbeitsvertrag, Vereinbarung, Kontoauszüge, Meldeadresse, Rückkehrdatum vorlegen.</span></li>
@@ -523,7 +515,10 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
 
   <!-- ===================== GELD ===================== -->
   <section class="view" id="v-geld" role="tabpanel" aria-label="Geld" hidden>
-    <div class="sec" style="margin-top:14px">
+    <nav class="jump" aria-label="Abschnitte">
+      <a href="#" data-jump="g-budget">Budget</a><a href="#" data-jump="g-10k">Unter 10k</a><a href="#" data-jump="g-2k">Varianten</a><a href="#" data-jump="g-wofuer">Wofür</a><a href="#" data-jump="g-wann">Wann</a><a href="#" data-jump="g-posten">Alle Posten</a>
+    </nav>
+    <div class="sec" id="g-budget" style="margin-top:14px">
       <h2>Budget <small>ohne Fahrzeugkapital, 1 € = 1,10 $</small></h2>
       <div class="totals">
         <div class="stat s1"><div class="l">Sparplan</div><div class="v">14.650 €</div><div class="h">alles klappt, kein Extra</div></div>
@@ -545,7 +540,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       <p class="note" style="margin-top:8px">Gehalt läuft weiter (25 h), das trägt den Cashflow. Größter Hebel nach unten: billigerer Truck, dann mehr Pannenrisiko. Größter Hebel nach oben: schlecht getimter Verkauf.</p>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="g-10k">
       <h2>Unter 10.000 € <small>Ziel vom 6. September</small></h2>
       <div class="totals">
         <div class="stat s1"><div class="l">Unter-10k-Plan</div><div class="v">9.500 €</div><div class="h">6 Monate ab Portland, 2.100 € davon Reserve</div></div>
@@ -618,7 +613,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       <p class="note" style="margin-top:8px">Jeder Tausender mehr beim Fahrzeug kostet 4 % Steuer und 8 % Wertverlust, also 120 € pro 1.000 $. Ziel: Toyota plus Pop-up unter 12.000 $ zusammen.</p>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="g-2k">
       <h2>Und 2.000 € insgesamt? <small>die ehrliche Rechnung</small></h2>
       <p>Visum, Flüge, Versicherung und Lizenz kosten allein rund 1.800 €, bevor du einen Kilometer fährst. Was je nach Reiseform mindestens bleibt, ohne Reserve und ohne Wertverlust:</p>
       <div class="tbl-wrap"><table>
@@ -646,7 +641,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       </div>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="g-wofuer">
       <h2>Wofür das Geld ist <small>Sparplan 14.650 €</small></h2>
       <div class="tbl-wrap"><table>
         <tr><th>Block</th><th>Posten</th><th class="num">€</th></tr>
@@ -660,7 +655,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       <p class="note">Deine „2.000 € ohne Sprit“ passen auf Essen bei 5 $/Tag, Camping, Propan, Lizenz und Köder: 1.800–3.000 € für 6 Monate. Der Rest ist Hinkommen (Flüge, Visum), Dortseinsdürfen (Versicherung), Bewegen (Sprit) und ein Fahrzeug besitzen (Zulassung, Versicherung, Verschleiß).</p>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="g-wann">
       <h2>Wann es fließt <small>gerundet</small></h2>
       <div class="tbl-wrap"><table>
         <tr><th>Wann</th><th>Was</th><th class="num">≈ €</th></tr>
@@ -680,7 +675,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
       <p class="note">Unterwegs kostet das Leben 800–1.350 € im Monat inklusive Sprit und Versicherung, ohne Sprit 400–600 €. Mit Kenai-Basis statt Interior (−700 €), Essen 5 $/Tag (−950 €), Sachen bei Familie (−350 €) und früh gebuchten Flügen (−400 €) landet der Sparplan bei etwa 12.200 €, davon 3.700 € Reserve. Darunter nur ohne Reserve oder ohne Auslands-KV, beides rate ich nicht.</p>
     </div>
 
-    <div class="sec">
+    <div class="sec" id="g-posten">
       <h2>Alle Posten</h2>
       <div class="tbl-wrap"><table>
         <tr><th>Posten</th><th class="num">Spar</th><th class="num">Real</th></tr>
@@ -704,6 +699,110 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
         <tr class="total"><td>Summe ohne Fahrzeugkapital</td><td class="num">14.650</td><td class="num">24.500</td></tr>
       </table></div>
       <p class="note">Gebundenes Kapital zusätzlich: 12.000–18.000 $ im März, Rückfluss 80–90 % im Oktober. Essen ist mit 10 $/Tag knapp gerechnet, Alaska-Preise liegen 30–40 % über den Lower 48, Lachs als Protein hilft.</p>
+    </div>
+  </section>
+
+  <!-- ===================== SUCHE ===================== -->
+  <section class="view" id="v-suche" role="tabpanel" aria-label="Suche" hidden>
+    <nav class="jump" aria-label="Abschnitte">
+      <a href="#" data-jump="s-truck">Truck</a><a href="#" data-jump="s-kabine">Kabine</a><a href="#" data-jump="s-kombi">Kombi</a><a href="#" data-jump="s-huette">Hütte</a><a href="#" data-jump="s-amt">Ämter &amp; Buchen</a>
+    </nav>
+    <div class="sec" style="margin-top:14px">
+      <h2>So gehst du vor</h2>
+      <ol class="steps">
+        <li>Links antippen, Filter sind gesetzt. Jetzt nur Preise lernen, alles ist im März weg.</li>
+        <li>Suche speichern und Benachrichtigung an: Craigslist-Konto, Facebook-Glocke, Zillow-Mail.</li>
+        <li>Wöchentlich 10 Minuten: Modell, Baujahr, Meilen, Preis in eine Liste.</li>
+        <li>Ernsthaft suchen ab Januar 2027. Vorlagen für Nachrichten stehen in docs/16 im Repo.</li>
+      </ol>
+      <p class="note">Zielpreis Camper: Truck plus Kabine zusammen unter 12.000 $. Zielpreis Hütte: 600–800 $ im Monat für 6 Monate ab April.</p>
+    </div>
+
+    <div class="sec" id="s-truck">
+      <h2>Truck <small>Privat, 4x4, sauberer Title</small></h2>
+      <ul class="links">
+        <li><a href="https://portland.craigslist.org/search/cto?query=tundra&min_price=5000&max_price=14000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2000"><span><b>Toyota Tundra, Portland</b><small>Craigslist, 5.000–14.000 $, ab 2000</small></span></a></li>
+        <li><a href="https://seattle.craigslist.org/search/cto?query=tundra&min_price=5000&max_price=14000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2000"><span><b>Toyota Tundra, Seattle</b><small>Craigslist, gleiche Filter</small></span></a></li>
+        <li><a href="https://portland.craigslist.org/search/cto?query=tacoma&min_price=6000&max_price=14000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2005"><span><b>Toyota Tacoma, Portland</b><small>Craigslist, 6.000–14.000 $, ab 2005</small></span></a></li>
+        <li><a href="https://portland.craigslist.org/search/cto?query=f250+4x4&min_price=5000&max_price=12000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2005"><span><b>Ford F-250 4x4, Portland</b><small>Craigslist, 5.000–12.000 $, für Hartschale</small></span></a></li>
+        <li><a href="https://portland.craigslist.org/search/cto?query=ram+2500+4x4&min_price=5000&max_price=13000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2006"><span><b>Ram 2500 4x4, Portland</b><small>Craigslist, 5.000–13.000 $</small></span></a></li>
+        <li><a href="https://portland.craigslist.org/search/cto?query=frontier+4x4&min_price=4000&max_price=10000&auto_drivetrain=3&auto_title_status=1&min_auto_year=2005"><span><b>Nissan Frontier 4x4, Portland</b><small>Craigslist, Sparvariante 4.000–10.000 $</small></span></a></li>
+        <li><a href="https://www.cargurus.com/Cars/inventorylisting/viewDetailsFilterViewInventoryListing.action?zip=97201&distance=100&entitySelectingHelper.selectedEntity=d2400&maxPrice=14000"><span><b>CarGurus Tundra bis 14.000 $</b><small>100 Meilen um Portland, mit Preishistorie</small></span></a></li>
+        <li><a href="https://www.autotrader.com/cars-for-sale/all-cars/toyota/tundra/portland-or?maxPrice=14000&searchRadius=100"><span><b>AutoTrader Tundra, Portland</b><small>Händler und Privat</small></span></a></li>
+        <li><a href="https://www.facebook.com/marketplace/portland/vehicles?query=toyota%20tundra%204x4&maxPrice=14000"><span><b>Facebook Marketplace Tundra</b><small>Portland, Login nötig</small></span></a></li>
+        <li><a href="https://anchorage.craigslist.org/search/cto?query=tundra&min_price=5000&max_price=15000&auto_drivetrain=3&auto_title_status=1"><span><b>Tundra, Anchorage</b><small>Für Variante Alaska direkt</small></span></a></li>
+        <li><a href="https://anchorage.craigslist.org/search/cto?query=subaru&min_price=2000&max_price=5000&auto_title_status=1"><span><b>Subaru, Anchorage</b><small>Für Hütte plus billiges Auto, 2.000–5.000 $</small></span></a></li>
+      </ul>
+    </div>
+
+    <div class="sec" id="s-kabine">
+      <h2>Pop-up &amp; Kabine</h2>
+      <ul class="links">
+        <li><a href="https://portland.craigslist.org/search/rvs?query=four+wheel+camper&max_price=13000"><span><b>Four Wheel Camper, Portland</b><small>Craigslist Privat, bis 13.000 $</small></span></a></li>
+        <li><a href="https://portland.craigslist.org/search/rvs?query=palomino+backpack&max_price=8000"><span><b>Palomino Backpack, Portland</b><small>Craigslist Privat, bis 8.000 $</small></span></a></li>
+        <li><a href="https://portland.craigslist.org/search/rvs?query=pop+up+truck+camper&max_price=10000"><span><b>Pop-up Truck Camper, Portland</b><small>Craigslist, bis 10.000 $, Fotos prüfen (trifft auch Anhänger)</small></span></a></li>
+        <li><a href="https://seattle.craigslist.org/search/rvs?query=truck+camper&max_price=9000"><span><b>Truck Camper, Seattle</b><small>Craigslist Privat, bis 9.000 $</small></span></a></li>
+        <li><a href="https://portland.craigslist.org/search/rvs?query=lance+camper&max_price=8000"><span><b>Lance Hartschale, Portland</b><small>Nur mit F-250 oder Ram 2500</small></span></a></li>
+        <li><a href="https://www.rvtrader.com/Truck-Camper/rvs-for-sale?type=Truck%20Camper%7C198074&state=Oregon%7COR&price=1000%3A9000"><span><b>RVTrader Truck Camper, Oregon</b><small>1.000–9.000 $</small></span></a></li>
+        <li><a href="https://www.rvtrader.com/Truck-Camper/rvs-for-sale?type=Truck%20Camper%7C198074&state=Washington%7CWA&price=1000%3A9000"><span><b>RVTrader Truck Camper, Washington</b><small>1.000–9.000 $</small></span></a></li>
+        <li><a href="https://fourwheelcampers.com/used-campers/"><span><b>Four Wheel Campers Gebrauchtbörse</b><small>Hersteller, ganze USA</small></span></a></li>
+        <li><a href="https://truckcamperadventure.com/classifieds/"><span><b>Truck Camper Adventure Classifieds</b><small>Community, gut gepflegte Kabinen</small></span></a></li>
+        <li><a href="https://www.wanderthewest.com/forums/"><span><b>Wander the West Forum</b><small>FWC- und ATC-Szene, Rubrik Classifieds</small></span></a></li>
+        <li><a href="https://www.facebook.com/marketplace/portland/search?query=four%20wheel%20camper&maxPrice=13000"><span><b>Facebook Marketplace Four Wheel Camper</b><small>Portland, Login nötig</small></span></a></li>
+        <li><a href="https://anchorage.craigslist.org/search/rva?query=truck+camper&max_price=10000"><span><b>Truck Camper, Anchorage</b><small>Für Variante Alaska direkt</small></span></a></li>
+      </ul>
+    </div>
+
+    <div class="sec" id="s-kombi">
+      <h2>Kombi <small>Truck plus Kabine zusammen</small></h2>
+      <ul class="links">
+        <li><a href="https://portland.craigslist.org/search/sss?query=truck+with+camper&max_price=16000"><span><b>Truck with camper, Portland</b><small>Craigslist alle Rubriken, bis 16.000 $</small></span></a></li>
+        <li><a href="https://seattle.craigslist.org/search/sss?query=truck+with+camper&max_price=16000"><span><b>Truck with camper, Seattle</b><small>bis 16.000 $</small></span></a></li>
+        <li><a href="https://www.facebook.com/marketplace/portland/search?query=truck%20with%20camper&maxPrice=16000"><span><b>Facebook Marketplace Kombi</b><small>Portland</small></span></a></li>
+        <li><a href="https://anchorage.craigslist.org/search/sss?query=truck+camper+combo&max_price=16000"><span><b>Kombi, Anchorage</b><small>Reisende verkaufen im September</small></span></a></li>
+      </ul>
+      <p class="note" style="margin-top:8px">Bei Kombis beide Teile einzeln bewerten und zwei Bill of Sales verlangen.</p>
+    </div>
+
+    <div class="sec" id="s-huette">
+      <h2>Hütte <small>Variante E, 6 Monate ab April</small></h2>
+      <ul class="links">
+        <li><a href="https://anchorage.craigslist.org/search/ken/apa?max_price=900"><span><b>Craigslist Kenai Peninsula, Miete</b><small>bis 900 $, Soldotna, Sterling, Kasilof, Homer</small></span></a></li>
+        <li><a href="https://anchorage.craigslist.org/search/ken/roo?max_price=700"><span><b>Craigslist Kenai Peninsula, Zimmer</b><small>bis 700 $, WG mit Internet</small></span></a></li>
+        <li><a href="https://anchorage.craigslist.org/search/mat/apa?max_price=800"><span><b>Craigslist Mat-Su</b><small>Willow, Houston, Talkeetna, bis 800 $</small></span></a></li>
+        <li><a href="https://www.zillow.com/soldotna-ak/rentals/"><span><b>Zillow Soldotna</b><small>Mietangebote, Suche speichern</small></span></a></li>
+        <li><a href="https://www.zillow.com/sterling-ak/rentals/"><span><b>Zillow Sterling</b><small>Kenai River Meile 60–80</small></span></a></li>
+        <li><a href="https://www.zillow.com/kasilof-ak/rentals/"><span><b>Zillow Kasilof</b><small>ruhiger, günstiger</small></span></a></li>
+        <li><a href="https://www.airbnb.com/s/Soldotna--AK--United-States/homes?checkin=2027-04-20&checkout=2027-05-20&adults=1"><span><b>Airbnb Soldotna, Monat April</b><small>Monatsrabatt sichtbar, Juli separat prüfen</small></span></a></li>
+        <li><a href="https://www.furnishedfinder.com/housing/Soldotna-AK"><span><b>Furnished Finder Soldotna</b><small>möbliert, meist über Budget, als Vergleich</small></span></a></li>
+        <li><a href="https://www.facebook.com/groups/search/groups/?q=kenai%20peninsula%20rentals"><span><b>Facebook-Gruppen Kenai Rentals</b><small>„Kenai Peninsula Rentals“, „Soldotna Kenai Rentals“, „Kenai Peninsula Buy Sell Trade“</small></span></a></li>
+      </ul>
+      <p class="note" style="margin-top:8px">Anfrage an Vermieter: 6 Monate ab 20. April, drei Monate im Voraus, ruhig, Nichtraucher, kein Haustier, Internet inklusive? Vorlage in docs/16.</p>
+    </div>
+
+    <div class="sec" id="s-amt">
+      <h2>Ämter &amp; Buchen</h2>
+      <ul class="links">
+        <li><a href="https://ceac.state.gov/genniv/"><span><b>DS-160 Visumantrag</b><small>Online-Formular, Social-Media-Namen der letzten 5 Jahre</small></span></a></li>
+        <li><a href="https://www.ustraveldocs.com/de/"><span><b>Visumtermin Konsulat Deutschland</b><small>Gebühr zahlen, Interview buchen</small></span></a></li>
+        <li><a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/global-visa-wait-times.html"><span><b>Wartezeiten Konsulate</b><small>Frankfurt, Berlin, München vergleichen</small></span></a></li>
+        <li><a href="https://i94.cbp.dhs.gov/"><span><b>I-94 prüfen</b><small>Nach jeder Einreise innerhalb 24 Stunden</small></span></a></li>
+        <li><a href="https://store.adfg.alaska.gov/"><span><b>ADF&amp;G Store, Angellizenz</b><small>Jahreslizenz Nonresident, e-signiert</small></span></a></li>
+        <li><a href="https://www.adfg.alaska.gov/sf/EONR/"><span><b>ADF&amp;G Emergency Orders</b><small>Vor jedem Angeltag</small></span></a></li>
+        <li><a href="https://www.adfg.alaska.gov/sf/FishingReports/"><span><b>ADF&amp;G Fishing Reports</b><small>Wöchentlich, Northern Kenai</small></span></a></li>
+        <li><a href="https://www.condor.com/de/"><span><b>Condor</b><small>Frankfurt–Anchorage nonstop Mitte Mai bis Mitte September</small></span></a></li>
+        <li><a href="https://www.dakotapost.net/"><span><b>Dakota Post</b><small>South-Dakota-Mailbox für Zulassung</small></span></a></li>
+        <li><a href="https://americasmailbox.com/"><span><b>Americas Mailbox</b><small>Alternative Mailbox South Dakota</small></span></a></li>
+        <li><a href="https://yourbestaddress.com/"><span><b>Your Best Address</b><small>Alternative Mailbox South Dakota</small></span></a></li>
+        <li><a href="https://www.progressive.com/"><span><b>Progressive</b><small>Quote mit deutschem Führerschein testen</small></span></a></li>
+        <li><a href="https://www.starlink.com/roam"><span><b>Starlink Roam</b><small>Mini und Roam 50 GB</small></span></a></li>
+        <li><a href="https://www.oregon.gov/odot/dmv/pages/vehicle/trip_permit.aspx"><span><b>Oregon DMV Trip Permit</b><small>21 Tage für unregistrierte Fahrzeuge</small></span></a></li>
+        <li><a href="https://www.test.de/Langzeit-Auslandskrankenversicherung-im-Vergleich-5988609-0/"><span><b>test.de Langzeit-Auslandskrankenversicherung</b><small>Tarife mit USA-Deckung vergleichen</small></span></a></li>
+        <li><a href="https://www.recreation.gov/search?q=Russian%20River%20Campground"><span><b>Russian River Campground</b><small>recreation.gov, Juli früh reservieren</small></span></a></li>
+        <li><a href="https://511.alaska.gov/"><span><b>Alaska 511</b><small>Straßenzustand, Sperrungen</small></span></a></li>
+        <li><a href="https://www.gasbuddy.com/"><span><b>GasBuddy</b><small>Spritpreise, Costco finden</small></span></a></li>
+        <li><a href="https://themilepost.com/"><span><b>The Milepost</b><small>Straßenführer Alaska und Yukon</small></span></a></li>
+      </ul>
     </div>
   </section>
 
@@ -773,6 +872,7 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
   <button type="button" role="tab" data-view="route" aria-selected="false">Route</button>
   <button type="button" role="tab" data-view="fisch" aria-selected="false">Angeln</button>
   <button type="button" role="tab" data-view="geld" aria-selected="false">Geld</button>
+  <button type="button" role="tab" data-view="suche" aria-selected="false">Suche</button>
   <button type="button" role="tab" data-view="liste" aria-selected="false">Liste</button>
 </div></nav>
 
@@ -796,6 +896,16 @@ tr.total td{border-top:2px solid var(--ink);font-weight:700}
   tabs.forEach(function(b){ b.addEventListener('click', function(){ show(b.getAttribute('data-view')); }); });
   var initial = (location.hash || '#plan').slice(1);
   show(views.some(function(v){ return v.id === 'v-' + initial; }) ? initial : 'plan');
+  Array.prototype.slice.call(document.querySelectorAll('[data-go]')).forEach(function(a){
+    a.addEventListener('click', function(e){ e.preventDefault(); show(a.getAttribute('data-go')); });
+  });
+  Array.prototype.slice.call(document.querySelectorAll('[data-jump]')).forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      var t = document.getElementById(a.getAttribute('data-jump'));
+      if (t) { t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    });
+  });
 
   var boxes = Array.prototype.slice.call(document.querySelectorAll('.check input'));
   var status = document.getElementById('save-status');
