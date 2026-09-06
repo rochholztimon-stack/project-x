@@ -306,6 +306,17 @@ brauchst. Kauf in Alaska scheidet wegen März-Start und Frühjahrs-Verkäufermar
   kostet aber 8–12 US-Tage und Sprit. Nur sinnvoll, wenn die US-Tage-Zählung noch Luft hat.
 - Toyota-Trucks verkaufen sich in Alaska schnell. Kabine getrennt anbieten.
 
+
+### 6.5 Alternative ohne Fahrzeug: Hütte am Fluss
+
+Idee vom 6. September: statt Camper eine Hütte an einem Lachsfluss, maximal 800 $ im Monat.
+Rechnung: 8.150–8.950 € für 6 Monate (20. April bis 10. Oktober, 174 US-Tage), ohne
+gebundenes Kapital, ohne Fahrzeugrisiko, mit festem Arbeitsplatz und Internet. Realistisch
+sind 600–800 $ für eine Dry Cabin oder Einliegerwohnung abseits des Ufers in Sterling,
+Soldotna oder Kasilof, wenn du im Januar suchst und 6 Monate ab April anbietest. Direkt am
+Fluss im Juli gibt es das nicht. Vergleich Camper gegen Hütte, Lagen, Suche und der Hybrid
+mit billigem Auto in docs/15-sparplan-unter-10k.md, Abschnitt 8. Entscheidung offen.
+
 ---
 
 ## 7. Route und Saison (Vorschlag)

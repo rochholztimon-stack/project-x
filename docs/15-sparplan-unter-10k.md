@@ -173,3 +173,111 @@ zurück, Umzug 300–500 €) und das gebundene Fahrzeugkapital.
 zu Hause auch ausgeben würdest, und lässt dir 2.100 € Puffer, damit eine Panne die Reise
 nicht beendet. Variante C ist der ehrliche Kompromiss, wenn die absolute Summe zählt:
 3 Monate Hochsaison, 3.100 € plus etwas Wertverlust, ohne Visumsverfahren.
+
+## 8. Variante E: Hütte am Fluss statt Camper
+
+Idee vom 6. September: eine Hütte an einem Lachsfluss mieten, maximal 800 $ im Monat, so
+günstig wie möglich. Ergebnis: **7.300–9.000 €** für 6 Monate je nach Miete, ohne gebundenes
+Fahrzeugkapital, ohne Kauf- und Verkaufsstress, mit Tisch, Strom, Heizung und Internet für
+die Arbeit. Dafür ohne Mobilität. Für dein Profil (Arbeit plus Uferangeln, Anfänger, kleines
+Budget) ist das mindestens gleichwertig zum Camper, in einigen Punkten besser.
+
+### Was eine Hütte realistisch kostet
+
+Auf der Kenai-Halbinsel machen Vermieter im Juli mit Tagesgästen 3.000 $ im Monat. Direkt am
+Fluss unter 800 $ im Juli gibt es nicht. Was es gibt:
+
+| Lage | Typ | Monat | Lachs zu Fuß oder per Rad |
+|---|---|---|---|
+| Sterling (Kenai River Meile 60–80) | Dry Cabin oder kleine Einliegerwohnung abseits des Ufers | 600–900 $ | Bings Landing, Morgan's Landing, Moose-River-Mündung: Sockeye Juli, Silberlachs August/September |
+| Soldotna (Stadt) | Zimmer, Einlieger, kleine Hütte | 650–900 $ | Centennial Park, Swiftwater Park, Soldotna Creek Park, Radweg entlang Sterling Highway, Fred Meyer, Walmart, Krankenhaus, Bibliothek |
+| Kasilof / Clam Gulch | Hütte, ruhiger, günstiger | 550–800 $ | Kasilof River, Crooked Creek: Sockeye Mitte Juni bis Juli, Silberlachs August |
+| Anchor Point / Ninilchik | Hütte | 600–850 $ | Anchor River: Silberlachs August, Steelhead September/Oktober, Heilbutt vom Strand |
+| Willow / Houston (Mat-Su) | Dry Cabin, viele Angebote | 500–700 $ | Willow Creek, Montana Creek, Little Susitna: Silberlachs August, kaum Sockeye, keine Hartgeld-Touristen |
+| Cooper Landing (Russian River) | fast nur Tagesvermietung | 1.500 $ und mehr | zu teuer, dort nur als Tagesausflug |
+
+Dry Cabin heißt: kein fließendes Wasser, Plumpsklo, Wasser kanisterweise, Strom und
+Heizung (Öl oder Holz) oft extra. Das ist in Alaska normal und für 6 Monate machbar.
+
+**So bekommst du 600–800 $ im Sommer:** Im Januar oder Februar suchen (Craigslist Anchorage,
+Rubrik "kenai peninsula", Facebook-Gruppen "Soldotna Kenai Rentals", "Kenai Peninsula Buy
+Sell Trade", Zillow mit Filter Monat). Sechs Monate ab April anbieten, gern Vorauszahlung
+für drei Monate. Für den Vermieter ist ein sicherer Mieter über die ganze Saison mehr wert
+als das Risiko leerer Juli-Nächte. Nach "includes internet" fragen, viele Hütten haben
+Starlink oder GCI.
+
+### Rechnung, 20. April bis 10. Oktober, 174 US-Tage
+
+| Posten | bei 650 $ Miete | bei 800 $ Miete |
+|---|---|---|
+| Visum B-2 | 440 | 440 |
+| Flüge FRA→ANC via Seattle im April, zurück im Oktober | 900 | 900 |
+| Auslandskrankenversicherung 175 Tage | 400 | 400 |
+| Angellizenz | 90 | 90 |
+| Miete 6 Monate | 3.550 | 4.360 |
+| Strom, Heizung, Wasser (Dry Cabin) | 330 | 330 |
+| Internet: Starlink Mini gebraucht plus Roam 50 GB, oder im Mietpreis | 300 | 300 |
+| Transport: gebrauchtes Rad, CARTS-Sammeltaxi Soldotna, Bus Anchorage–Soldotna zweimal | 330 | 330 |
+| Essen 5–7 $/Tag, Lachs ab Mitte Juni | 1.000 | 1.000 |
+| Angeln gebraucht plus Bärenspray | 200 | 200 |
+| Ausrüstung | 100 | 100 |
+| Reserve | 500 | 500 |
+| **Summe** | **≈ 8.150 €** | **≈ 8.950 €** |
+
+Kaution (meist eine Monatsmiete) ist Liquidität, keine Kosten. Kein Fahrzeugkapital, kein
+Wertverlust, keine Reparaturreserve, keine Zulassung.
+
+### Hütte gegen Camper
+
+| | Camper (Unter-10k-Plan) | Hütte |
+|---|---|---|
+| Gesamtkosten | 9.500 € (7.400 sicher weg) | 8.150–8.950 € (7.650–8.450 sicher weg) |
+| Gebundenes Kapital | 11.000–13.000 $ im März | 1 Monatsmiete Kaution |
+| Größtes Risiko | Panne, schlechter Verkauf | Keine Hütte unter 800 $ gefunden, dann 1.000 $ oder Zimmer statt Hütte |
+| Arbeiten | Tisch in der Kabine, Strom von Solar, Starlink im Wald suchen | Tisch, Steckdose, Heizung, Internet fest |
+| Angeln | Kenai, Kasilof, Valdez, Seward, Homer, Interior | ein Flusssystem, Rest per Bus oder Mitfahrt |
+| Einreise | März Lower 48, Kanada, im Mai neues I-94 nötig | eine Einreise, 6 Monate am Stück, kein Kanada |
+| Aufwand vorher | Kauf, Zulassung, Versicherung, Ausbau | Suche und Mietvertrag aus Deutschland |
+| Am Ende | Verkaufen unter Zeitdruck | Schlüssel abgeben |
+| Bären, Wetter | im Fahrzeug | in der Hütte, Angeln zu Fuß |
+| Alaska gesehen | viel | Kenai gründlich |
+
+### Hybrid: Hütte plus billiges Auto
+
+Ein alter Subaru oder Pickup für 2.500–3.500 $ (Alaska-Standard, viele Angebote im April),
+Zulassung über South Dakota, nur Haftpflicht, im Oktober verkaufen: plus 1.200–1.600 €
+(Zulassung 400, Versicherung 330, Sprit 250 für 2.000 km, Wertverlust 300–600). Dann sind
+Homer, Seward, Anchor Point und Valdez als Tagesausflug drin. Summe dann ≈ 9.500–10.500 €.
+Erst im Juni entscheiden, wenn du weißt, ob dir die Kenai reicht.
+
+### Noch billiger wohnen, mit Haken
+
+- **Zimmer in einer WG** in Soldotna oder Kenai: 500–700 $ inklusive Internet und Strom.
+  Keine Hütte, aber Anschluss und oft ein Mitbewohner mit Boot.
+- **Housesitting** (TrustedHousesitters, ca. 130 € Jahresbeitrag): Haus und Haustier hüten
+  gegen freie Unterkunft. In Anchorage und auf der Kenai gibt es im Sommer Angebote, aber
+  meist 1–4 Wochen, selten 6 Monate. Als Lückenfüller gut, als Plan unsicher.
+- **Workaway, Caretaking, Arbeit gegen Kost und Logis:** in Alaska verbreitet (Lodges suchen
+  Mai bis September Leute), aber mit B-2 ist Arbeit gegen Unterkunft für CBP Erwerbstätigkeit.
+  Das ist keine Grauzone, das ist verboten. Lasse ich weg.
+
+### Wo genau: meine Reihenfolge
+
+1. **Sterling oder Soldotna**, abseits des Ufers, mit Rad zu den öffentlichen Zugängen.
+   Sockeye, Silberlachs, Regenbogenforelle, Infrastruktur, Bus nach Anchorage.
+2. **Kasilof**, wenn Sterling zu teuer ist. Ruhiger, 20 Minuten nach Soldotna.
+3. **Anchor Point**, wenn du Heilbutt vom Strand und Steelhead im Herbst willst und auf
+   Sockeye verzichtest.
+4. **Willow**, wenn nur der Preis zählt. Silberlachs im August, sonst Forelle, und zwei
+   Stunden nach Anchorage.
+
+### Was sich am Plan ändert
+
+- Kein Kauf in Oregon, kein Kanada, kein Trip Permit, keine South-Dakota-Mailbox.
+- Einreise einmal, ca. 20. April in Anchorage, um 6 Monate bitten, Ausreise 10. Oktober,
+  174 US-Tage.
+- B-2-Interview: "Ich miete für die Angelsaison eine Hütte auf der Kenai-Halbinsel"
+  ist eine völlig normale Touristengeschichte. Mietvertrag mitnehmen.
+- Suche Januar bis Februar, Vertrag bis März, Kaution per Überweisung (Wise) oder bei Ankunft.
+- Angeln: docs/13, Abschnitt Kenai-Halbinsel, alles mit dem Rad erreichbar, was unter
+  Sterling und Soldotna steht.
