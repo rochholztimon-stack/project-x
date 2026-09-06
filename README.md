@@ -30,7 +30,8 @@ Planungs-Repo. Die Entscheidungen stehen in [SPEC.md](SPEC.md), die Belege in
 6. **Arbeit:** 25 h/Woche remote, Kernzeit 5–10 Uhr Alaska (15–20 Uhr Deutschland),
    Starlink Mini am Fahrzeug. Compliance-Checkliste für FloodWaive in Abschnitt 5 der Spec.
 7. **Wohnsitz in Mexiko** bringt für Alaska nichts und kostet GKV, Sozialversicherung und die
-   Arbeitgeber-Zusage. Antwort in Spec 4.4.
+   Arbeitgeber-Zusage. Antwort in Spec 4.4. Eine **Meldeadresse in den USA** gibt es nicht,
+   die South-Dakota-Mailbox ist reine Postadresse und darf nie als Wohnsitz auftauchen (Spec 4.5).
 8. **GKV bleibt** (Pflichtversicherung bei laufendem Job), zahlt in den USA aber nichts.
    Langzeit-Auslandskrankenversicherung mit USA-Deckung ist Pflicht. Meldeadresse in
    Deutschland behalten (Familie), nicht abmelden.

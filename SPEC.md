@@ -141,6 +141,41 @@ Für Alaska bringt es nichts und macht drei Dinge kaputt.
   Wohnsitz": Das erzeugt genau die Probleme mit Krankenversicherung, Steuer, Bank und Visum,
   die diese Spec vermeidet.
 
+### 4.5 Meldeadresse in den USA? Gibt es nicht, und als Wohnsitz darfst du sie nicht führen
+
+Deine Frage vom 6. September. Kurz: In den USA gibt es keine Meldepflicht und keine
+Meldeadresse. Eine US-Adresse ist eine Postadresse, sonst nichts. Du brauchst genau eine,
+die South-Dakota-Mailbox, für Fahrzeugtitel, Kennzeichen, Versicherung, Starlink-Konto und
+Pakete. Als Ersatz für den deutschen Wohnsitz taugt sie nicht, und als "Wohnsitz" darfst du
+sie mit B-2 gar nicht ausgeben.
+
+- **Visum:** B-2 setzt voraus, dass du einen Wohnsitz im Ausland hast, den du nicht aufgeben
+  willst (INA 214(b)). Wer sich in den USA "niederlässt", einen US-Führerschein macht oder
+  im DS-160 eine US-Adresse als Zuhause angibt, signalisiert Einwanderungsabsicht. Folge:
+  Ablehnung oder Statusverletzung. Die South-Dakota-"Residency"-Pakete der Vollzeit-Camper
+  (eine Nacht Hotel, Führerschein, Wahlregistrierung) sind für US-Bürger gemacht, nicht für
+  B-2-Besucher.
+- **Steuer:** Die Adresse allein macht dich nicht steuerpflichtig, das tun die Tage. Aber bei
+  knapper 183-Tage-Bilanz ist eine "ständige Wohnstätte" in den USA genau das Kriterium, das
+  im DBA-Tiebreaker gegen dich zählt. Eine Mailbox ist keine Wohnstätte, solange du sie nicht
+  als Wohnsitz ausgibst.
+- **Deutschland:** Wenn du dich abmeldest und als neue Adresse die USA angibst, lesen
+  Finanzamt, Krankenkasse, Bank und Versicherer das als Wegzug in die USA. Folgen: keine
+  Langzeit-Auslandskrankenversicherung (setzt deutschen Wohnsitz voraus), Ausstrahlung bei
+  FloodWaive wackelt (braucht befristeten Auslandsaufenthalt mit Rückkehr), deutsche Banken
+  und Broker kündigen Kunden mit US-Adresse regelmäßig (FATCA, US-Wertpapierrecht), Post
+  kommt nicht mehr an. Genau das, was Abschnitt 4.2 vermeidet.
+- **Was die US-Adresse leisten soll:** Mailbox Sioux Falls für Title, Registration,
+  Versicherungspost, Starlink, Amazon. Unterwegs General Delivery an Postämtern (kostenlos,
+  30 Tage Lagerung) für Pakete und Kennzeichen. Deutsche Post per Nachsendeauftrag an die
+  Familie, wichtige Briefe abfotografieren lassen.
+- **Im DS-160 und an der Grenze:** Heimatadresse ist die Familie in Deutschland. "Address
+  where you will stay in the U.S." ist die erste Unterkunft in Portland mit Hinweis
+  "traveling by RV". Die SD-Mailbox dort nicht eintragen.
+
+**Fazit:** Deutsche Meldeadresse bei Familie plus US-Mailbox als Postadresse. Beides
+zusammen, nicht eins statt dem anderen.
+
 ---
 
 ## 5. Compliance-Checkliste FloodWaive (du prüfst sie selbst als Personalleiter)
@@ -344,7 +379,7 @@ brauchst. Kauf in Alaska scheidet wegen März-Start und Frühjahrs-Verkäufermar
 ## 10. Nicht-Ziele
 
 - Kein Winter in Alaska, keine Verlängerung über die 175-US-Tage hinaus.
-- Kein Wohnsitz in Mexiko und keine Abmeldung ohne deutschen Wohnsitz (Abschnitt 4.4).
+- Kein Wohnsitz in Mexiko, keine Abmeldung ohne deutschen Wohnsitz, keine US-Adresse als Wohnsitz (Abschnitte 4.4 und 4.5). Die SD-Mailbox bleibt reine Postadresse.
 - Kein Wohnmobil aus Deutschland verschiffen, kein Mietfahrzeug.
 - Keine Jagd, keine Schusswaffe (für Nonimmigrants ohne Jagdlizenz verboten, Import per
   ATF-Formular 6NIA, Kanada-Transit zusätzlich problematisch). Bärenspray reicht.
